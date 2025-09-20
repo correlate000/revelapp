@@ -1,0 +1,588 @@
+@charset "utf-8";
+/*===================================================================================================
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+〇 SECTION TITLE 〇
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+====================================================================================================*/
+
+.faq{
+	
+	overflow: hidden;
+	padding: 50px 0 100px 0;
+	.container{
+		max-width: 1480px;
+		margin: 0 auto 0;
+		padding: 0 2% 0 2%;
+		.title{
+			@include flexBase;
+            h3{
+				
+				text-align: center;
+                .catch{
+					color:$main-color;
+					font-family: 'Jost';
+					font-family: 600;
+                    line-height: 1.0;
+                    letter-spacing: 10px;
+                    font-size: 90px;
+                }
+            }
+            h2{
+                margin: 0px 0 0 0;
+				padding: 0 0 0 30px;
+                .catch{
+					display: inline-block;
+					background: $grade-color;
+					box-shadow: $box-shadow-main;
+					border-bottom:solid 3px $overlay-color;
+					color:#fff;
+					padding: 5px 24px 5px 25px;
+                    line-height: 1.5;
+                    font-weight: 600;
+                    font-size: 24px;
+					.small{
+						font-size: 0.7em;
+					}
+                }
+            }
+        }
+		.box-wrapper{
+			.box{
+				margin: 30px 0 0 0;
+				ul{
+					width: 100%;
+					padding: 0;
+					li{
+						list-style: none;
+						button{
+							position: relative;
+							border: none;
+							width: 100%;
+							background-color: inherit;
+							color: #fff;
+							background: $grade-color;
+							cursor: pointer;
+							text-align: left;
+							padding: 15px 0 15px 20px;
+							font-size:1em;
+							border-bottom:solid 1px $overlay-color;
+							.inset{
+								display: inline-flex;
+								align-items: center;
+								.mark{
+									font-size: 22px;
+								}
+								h3{
+									padding: 0 50px 0 20px;
+									.catch{
+										font-size: 18px;
+									}
+								}
+							}
+							&::before,
+							&::after{
+							  content:"";
+							  position: absolute;
+							  line-height: 0;
+							  top: 50%;
+							  width: 1.5px;
+							  height: 8px;
+							  background-color: #fff;
+							  transition: .5s;
+							  transform: translate(0,-50%);
+							}
+							
+							&::before{
+								transform: translate(0,-50%) rotate(-45deg);
+								right: 35px;
+							  }
+							  
+							&::after{
+								transform: translate(0,-50%) rotate(45deg);
+								right: 30px;
+							}
+							&:hover{
+								background-color: #3e3e3e;
+							}
+						  }
+						ul{
+							// height: 0;
+							// padding: 0;
+							// overflow: hidden;
+							transition: .5s;
+							margin:0;
+							li{
+								padding: 30px 40px 20px 40px;
+                                background: $overlay-color;
+								color:$main-color;
+								.inset{
+									display: flex;
+									align-items: flex-start;
+									.mark{
+										@include flexBase;
+										width: 40px;
+										height: 40px;
+										color:#fff;
+										background: $grade-color;
+										border-radius: 50%;
+										p{
+											font-family: 'Jost';
+											font-size: 26px;
+											text-align: center;
+										}
+										
+									}
+									.sentence{
+										width: calc(100% - 40px);
+										padding: 0 0 0 20px;
+										font-size: 18px;
+										p{
+											padding: 0px 0 20px 0;
+											line-height: 1.8;
+										}
+									}
+								}
+
+							 }
+						}
+						&.active{
+							button{
+								&::before{
+									transform: rotate(-135deg);
+									transition:.5s;
+								}
+								&::after{
+									transform: rotate(135deg);
+									transition:.5s;
+								}
+							}
+							ul{
+								li{
+									&:last-child{
+										border-bottom:none; 
+									}
+								}
+							}
+						}
+					}
+					&.active{
+						overflow-y: auto;
+					}
+				}
+			}
+		}
+	}
+  
+}
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 1024px～1280px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+	.faq{
+		overflow: hidden;
+		padding: 50px 0 50px 0;
+		.container{
+			max-width: 1480px;
+			margin: 0 auto 0;
+			padding: 0 2% 0 2%;
+			.title{
+				@include flexBase;
+				h3{
+					.catch{
+						line-height: 1.0;
+						letter-spacing: 10px;
+						font-size: 77px;
+					}
+				}
+				h2{
+					margin: 0px 0 0 0;
+					padding: 0 0 0 60px;
+					.catch{
+						font-size: 24px;
+					}
+				}
+			}
+			.box-wrapper{
+				.box{
+					margin: 60px 0 0 0;
+					ul{
+						width: 100%;
+						padding: 0;
+						li{
+							list-style: none;
+							button{
+								width: 100%;
+								padding: 15px 0 15px 20px;
+								font-size:1em;
+								.inset{
+									display: inline-flex;
+									align-items: center;
+									.mark{
+										font-size: 22px;
+									}
+									h3{
+										padding: 0 50px 0 20px;
+										.catch{
+											font-size: 18px;
+										}
+									}
+								}
+								&::before,
+								&::after{
+								  top: 50%;
+								  width: 1.5px;
+								  height: 8px;
+								  transition: .5s;
+								  transform: translate(0,-50%);
+								}
+								
+								&::before{
+									transform: translate(0,-50%) rotate(-45deg);
+									right: 35px;
+								  }
+								  
+								&::after{
+									transform: translate(0,-50%) rotate(45deg);
+									right: 30px;
+								}
+							  }
+	
+	
+							  
+							ul{
+								transition: .5s;
+								margin:0;
+								li{
+									padding: 30px 40px 20px 40px;
+									.mark{
+										width: 40px;
+										height: 40px;
+										p{
+											font-size: 26px;
+										}
+										
+									}
+									.sentence{
+										width: calc(100% - 40px);
+										padding: 0 0 0 20px;
+										font-size: 18px;
+										p{
+											padding: 0px 0 20px 0;
+											line-height: 1.8;
+										}
+									}
+								}
+							}
+							&.active{
+								button{
+									&::before{
+										transform: rotate(-135deg);
+										transition:.5s;
+									}
+									&::after{
+										transform: rotate(135deg);
+										transition:.5s;
+									}
+								}
+								ul{
+									li{
+										&:last-child{
+											border-bottom:none; 
+										}
+									}
+								}
+							}
+						}
+						&.active{
+							overflow-y: auto;
+						}
+					}
+				}
+			}
+		}
+	}
+} /* 1024px～1280px responsive-close
+
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 768px～1023px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.faq{
+		overflow: hidden;
+		padding: 50px 0 50px 0;
+		.container{
+			max-width: 1480px;
+			margin: 0 auto 0;
+			padding: 0 2% 0 2%;
+			.title{
+				@include flexBase;
+				h3{
+					.catch{
+						line-height: 1.0;
+						letter-spacing: 10px;
+						font-size: 77px;
+					}
+				}
+				h2{
+					margin: 0px 0 0 0;
+					padding: 0 0 0 60px;
+					.catch{
+						font-size: 24px;
+					}
+				}
+			}
+			.box-wrapper{
+				.box{
+					margin: 60px 0 0 0;
+					ul{
+						width: 100%;
+						padding: 0;
+						li{
+							list-style: none;
+							button{
+								width: 100%;
+								padding: 15px 0 15px 20px;
+								font-size:1em;
+								.inset{
+									display: inlin-flex;
+									align-items: center;
+									.mark{
+										font-size: 20px;
+									}
+									h3{
+										padding: 0 50px 0 20px;
+										.catch{
+											font-size: 17px;
+										}
+									}
+								}
+								&::before,
+								&::after{
+								  top: 50%;
+								  width: 1.5px;
+								  height: 8px;
+								  transition: .5s;
+								  transform: translate(0,-50%);
+								}
+								
+								&::before{
+									transform: translate(0,-50%) rotate(-45deg);
+									right: 35px;
+								  }
+								  
+								&::after{
+									transform: translate(0,-50%) rotate(45deg);
+									right: 30px;
+								}
+							  }
+	
+	
+							  
+							ul{
+								transition: .5s;
+								margin:0;
+								li{
+									padding: 30px 40px 20px 40px;
+									.inset{
+										.mark{
+											width: 40px;
+											height: 40px;
+											p{
+												font-size: 18px;
+											}
+											
+										}
+										.sentence{
+											width: calc(100% - 40px);
+											padding: 0 0 0 20px;
+											font-size: 16px;
+											p{
+												padding: 0px 0 20px 0;
+												line-height: 1.8;
+											}
+										}
+									}
+								 }
+							}
+							&.active{
+								button{
+									&::before{
+										transform: rotate(-135deg);
+										transition:.5s;
+									}
+									&::after{
+										transform: rotate(135deg);
+										transition:.5s;
+									}
+								}
+
+							}
+						}
+						&.active{
+							overflow-y: auto;
+						}
+					}
+				}
+			}
+		}
+	}
+} /* 768px～1023px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+
+/**********************************************************************************
+ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+◆	Stylesheet: 767pxまで(スマホ)のモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+	.faq{
+		overflow: hidden;
+		padding: 50px 0 50px 0;
+		.container{
+			max-width: 1480px;
+			margin: 0 auto 0;
+			padding: 0 2% 0 2%;
+			.title{
+				display: block;
+				h3{
+					.catch{
+						line-height: 1.0;
+						letter-spacing: 6px;
+						font-size: 14vw;
+					}
+				}
+				h2{
+					margin: 0px 0 0 0;
+					padding: 20px 0 0 0px;
+					text-align: center;
+					.catch{
+						font-size: 5vw;
+						text-align: center;
+						padding: 5px 20px 5px 20px;
+					}
+				}
+			}
+			.box-wrapper{
+				.box{
+					margin: 60px 0 0 0;
+					ul{
+						width: 100%;
+						padding: 0;
+						li{
+							list-style: none;
+							button{
+								width: 100%;
+								padding: 15px 0 15px 20px;
+								font-size:1em;
+								.inset{
+									display: flex;
+									align-items: center;
+									.mark{
+										font-size: 5.5vw;
+									}
+									h3{
+										padding: 0 30px 0 10px;
+										.catch{
+											font-size: 4.0vw;
+										}
+									}
+								}
+								&::before,
+								&::after{
+								  top: 50%;
+								  width: 1.5px;
+								  height: 8px;
+								  transition: .5s;
+								  transform: translate(0,-50%);
+								}
+								
+								&::before{
+									transform: translate(0,-50%) rotate(-45deg);
+									right: 25px;
+								  }
+								  
+								&::after{
+									transform: translate(0,-50%) rotate(45deg);
+									right: 20px;
+								}
+							  }
+	
+	
+							  
+							ul{
+								transition: .5s;
+								margin:0;
+								li{
+									padding: 20px 20px 20px 20px;
+									.inset{
+										.mark{
+											width: 9vw;
+											p{
+												font-size: 3vw;
+											}
+										}
+										.sentence{
+											width: calc(100% - 9vw);
+											padding: 0 0 0 10px;
+											p{
+												font-size: 3.5vw;
+											}
+										}
+									}
+
+								 }
+							}
+							&.active{
+								button{
+									&::before{
+										transform: rotate(-135deg);
+										transition:.5s;
+									}
+									&::after{
+										transform: rotate(135deg);
+										transition:.5s;
+									}
+								}
+								ul{
+									li{
+										&:last-child{
+											border-bottom:none; 
+										}
+									}
+								}
+							}
+						}
+						&.active{
+							overflow-y: auto;
+						}
+					}
+				}
+			}
+		}
+	}
+} /* 767px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+
+

@@ -1,0 +1,877 @@
+@charset "utf-8";
+/*===================================================================================================
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+〇 HEADER03 〇
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+====================================================================================================*/
+
+.header03{
+    overflow: hidden;
+    position: relative;
+    background: url(../images/header03-bg.jpg) no-repeat 0 0;
+    background-size: cover;
+    .logo{
+        @include flexBase(center,center);
+        line-height: 0;
+        position: absolute;
+        z-index: 5;
+        right:50px;
+        bottom:50px;
+        background: rgba($color: $navy-color, $alpha: 0.8);
+        width: 220px;
+        height: 220px;
+        img{
+            width: 62.5%;
+            height: auto;
+        }
+    }
+    .back{
+        position: absolute;
+        z-index:4;
+        line-height: 1.1;
+        p{
+            @include gradeText;
+            font-family: 'Antonio';
+            font-weight: 400;
+            opacity: 0.25;
+            letter-spacing: 6px;
+            font-size: 120px;
+        }
+        &.top{
+            left:0;
+            top:-5px;
+        }
+        &.bottom{
+            right:0;
+            bottom:-5px;
+        }
+    }
+    .triangle{
+        position: absolute;
+        z-index: 2;
+        line-height: 0;
+        opacity: 0.2;
+        transform: scale(1.25,0.35);
+        background: $grade-color;
+        opacity: 0.2;
+        width: 600px;
+        height: 180px;
+        &.left-top{
+            left:0;
+            top:0;
+            transform-origin: left top;
+            
+            clip-path: polygon(0 0, 0% 100%, 100% 0);
+        }
+        &.left-bottom{
+            left:0;
+            bottom:0;
+            transform-origin: left bottom;
+            clip-path: polygon(0 100%, 100% 100%, 0 0);
+        }
+    }
+    .visual{
+        position: absolute;
+        z-index: 1;
+        width: 70%;
+        height: 100%;
+        right:0;
+        top:0;
+        .thumb{
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
+            width: 100%;
+            height: 100%;
+            li{
+                
+                img{
+                    border-radius: 0%;
+                }
+            }
+        }
+    }
+ 
+    .container{
+        position: relative;
+        overflow: hidden;
+        z-index: 4;
+        max-width: 1920px;
+        @include flexBase(center,flex-start);
+        margin: 0 auto 0;
+        height: 89vh;
+        .text{
+            padding: 0px 0 0 5%;
+            h2{
+                line-height: 1.3;
+                .line{
+                    display: inline-block;
+                    position: relative;
+                    background: #fff;
+                    color:#fff;
+                    padding: 10px 25px 10px 25px;
+                    &::before{
+                        @include gradeBorder(3px,3px);
+                    }
+                    .catch{
+                        @include gradeText02;
+                        font-size: 25px;
+                    }
+                }
+            }
+            .mark{
+                margin: 10px 0 0 0;
+                p{
+                    
+                    transform: skew(-15deg);
+                    box-shadow: $box-shadow-main;
+                    background: $grade-color;
+                    border:solid 3px #fff;
+                    display: inline-block;
+                    color:#fff;
+                    padding: 0 50px 0 50px;
+                    font-size: 34px;
+                    span{
+                        display: inline-block;
+                        transform: skew(15deg);
+                    }
+                }
+            }     
+            h1{
+                line-height: 1.4;
+                margin: 5px 0 0 0;
+                font-weight: 500;
+                .line{
+                    margin: 10px 0 0 0;
+                    .catch{
+                        position: relative;
+                        display: inline-block;
+                        background: $grade-color;
+                        box-shadow: $box-shadow-main;
+                        color:#fff;
+                        letter-spacing: 2px;
+                        font-size: 52px;
+                        padding: 3px 30px 3px 30px;
+                        &::before,
+                        &::after{
+                            content:"";
+                            background: #fff;
+                            position: absolute;
+                            left:0;
+                            width: 100%;
+                            height: 2px;
+                        }
+                        &::before{
+                            top:4px;
+                        }
+                        &::after{
+                            bottom:4px;
+
+                        }
+                    }
+                    &:nth-child(1){
+                        margin:10px 0 0 0;
+                    }
+                }
+            }
+            .sentence{
+                line-height: 1.65;
+                margin: 25px 0 0 20px;
+                P{
+                    color:$sub-color;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    font-size: 25px;
+                    .grade{
+                        @include gradeText;
+                    }
+                }    
+            }
+            .button{
+                width: 500px;
+                font-weight: 700;
+                border-radius: 100px;
+                margin: 40px 0 0 0;
+                padding: 1px 0 0 0;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    padding: 5px 0 20px 0;
+                    .top{
+                        text-align: center;
+                        margin: -10px 0 0 0;
+                        .catch{
+                            padding: 5px 25px 5px 25px;
+                            position: relative;
+
+                            border-radius: 50px;
+                            text-align: center;
+                            display: inline-block;
+                            background: #fff;
+                            margin: 0px 0 0 0;
+                            
+                            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                            &:after {
+                                content: "";
+                                position: absolute;
+                                z-index: 1;
+                                top:5px;
+                                left: 50%;
+                                transform: translate(-50%,0);
+                                border: 25px solid transparent;
+                                border-top: 40px solid #fff;
+                            }
+                            p{
+                                position: relative;
+                                z-index: 3;
+                                font-size:18px;
+                                line-height: 1.65;
+                                letter-spacing: 1px;
+                                .small{
+                                    font-size:0.8em;
+                                }
+                            }
+                        }
+                    }
+                    .bottom{
+                        margin: 4px 0 0 0;
+                        padding: 0px 30px 15px 30px;
+                    }
+                }
+                &.consul{
+                    background: $add-grade-color;
+                    border-bottom:solid 8px #dc350c;
+                    color:$orange-color;
+                    a{
+                        .top{
+                            .catch{
+                                p{
+                                    color:$orange-color;                               
+                                }
+                            }
+                        }
+                        .bottom{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            .icon{
+                                line-height: 0;
+                                width: 40px;
+                                img{
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                            .catch{
+                                padding: 0 0px 0 0px;
+                                
+                                font-size:22px;
+                            }
+                            .arrow{
+                                line-height: 0;
+                                width: 30px;
+                                img{
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 1024px～1280px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .header03{
+        .logo{
+            right:50px;
+            bottom:50px;
+            width: 110px;
+            height: 110px;
+            img{
+                width: 62.5%;
+                height: auto;
+            }
+        }
+        .back{
+            p{
+                opacity: 0.25;
+                letter-spacing: 5px;
+                font-size: 100px;
+            }
+            &.top{
+                left:0;
+                top:-5px;
+            }
+            &.bottom{
+                right:0;
+                bottom:-5px;
+            }
+        }
+        .triangle{
+            width: 500px;
+            height: 180px;
+            &.left-top{
+                clip-path: polygon(0 0, 0% 100%, 100% 0);
+            }
+            &.left-bottom{
+                clip-path: polygon(0 100%, 100% 100%, 0 0);
+            }
+        }
+        .visual{
+            width: 70%;
+            .thumb{
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
+                li{
+                    img{
+                        border-radius: 0%;
+                    }
+                }
+            }
+        }
+     
+        .container{
+            height: 89vh;
+            .text{
+                padding: 0px 0 0 5%;
+                h2{
+                    line-height: 1.3;
+                    .line{
+                        padding: 10px 25px 10px 25px;
+                        &::before{
+                            @include gradeBorder(3px,3px);
+                        }
+                        .catch{
+                            font-size: 21px;
+                        }
+                    }
+                }
+                .mark{
+                    margin: 10px 0 0 0;
+                    p{
+                        
+                        padding: 0 50px 0 50px;
+                        font-size: 30px;
+                        span{
+                            display: inline-block;
+                            transform: skew(15deg);
+                        }
+                    }
+                }     
+                h1{
+                    line-height: 1.4;
+                    margin: 5px 0 0 0;
+                    .line{
+                        margin: 10px 0 0 0;
+                        .catch{
+                            letter-spacing: 1px;
+                            font-size: 38px;
+                            padding: 7px 25px 7px 25px;
+                            &::before,
+                            &::after{
+                                width: 100%;
+                                height: 2px;
+                            }
+                            &::before{
+                                top:4px;
+                            }
+                            &::after{
+                                bottom:4px;
+    
+                            }
+                        }
+                        &:nth-child(1){
+                            margin:10px 0 0 0;
+                        }
+                    }
+                }
+                .sentence{
+                    line-height: 1.65;
+                    margin: 25px 0 0 20px;
+                    P{
+                        letter-spacing: 1px;
+                        font-size: 22px;
+                        .grade{
+                            @include gradeText;
+                        }
+                    }    
+                }
+                .button{
+                    width: 450px;
+                    margin: 40px 0 0 0;
+                    padding: 1px 0 0 0;
+                    a{
+                        color: #fff;
+                        padding: 5px 0 20px 0;
+                        .top{
+                            margin: -10px 0 0 0;
+                            .catch{
+                                padding: 5px 25px 5px 25px;
+                                &:after {
+                                    border-top: 40px solid #fff;
+                                }
+                                p{
+                                    font-size:18px;
+                                    line-height: 1.65;
+                                    letter-spacing: 1px;
+                                    .small{
+                                        font-size:0.8em;
+                                    }
+                                }
+                            }
+                        }
+                        .bottom{
+                            margin: 4px 0 0 0;
+                            padding: 0px 30px 15px 30px;
+                        }
+                    }
+                    &.consul{
+                        a{
+                            .top{
+                                .catch{
+                                    p{
+                                        color:$orange-color;                               
+                                    }
+                                }
+                            }
+                            .bottom{
+                                .icon{
+                                    line-height: 0;
+                                    width: 35px;
+                                    img{
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                                .catch{
+                                    padding: 0 0px 0 0px;
+                                    font-size:20px;
+                                }
+                                .arrow{
+                                    line-height: 0;
+                                    width: 25px;
+                                    img{
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+    
+} /* 1024px～1280px responsive-close
+
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 768px～1023px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .header03{
+        .logo{
+            right:50px;
+            bottom:50px;
+            width: 110px;
+            height: 110px;
+            img{
+                width: 62.5%;
+                height: auto;
+            }
+        }
+        .back{
+            p{
+                opacity: 0.25;
+                letter-spacing: 5px;
+                font-size: 100px;
+            }
+            &.top{
+                left:0;
+                top:-5px;
+            }
+            &.bottom{
+                right:0;
+                bottom:-5px;
+            }
+        }
+        .triangle{
+            width: 500px;
+            height: 180px;
+            &.left-top{
+                clip-path: polygon(0 0, 0% 100%, 100% 0);
+            }
+            &.left-bottom{
+                clip-path: polygon(0 100%, 100% 100%, 0 0);
+            }
+        }
+        .visual{
+            width: 70%;
+            .thumb{
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
+                li{
+                    img{
+                        border-radius: 0%;
+                    }
+                }
+            }
+        }
+     
+        .container{
+            height: 89vh;
+            .text{
+                padding: 0px 0 0 2.5%;
+                h2{
+                    line-height: 1.3;
+                    .line{
+                        padding: 10px 25px 10px 25px;
+                        &::before{
+                            @include gradeBorder(3px,3px);
+                        }
+                        .catch{
+                            font-size: 21px;
+                        }
+                    }
+                }
+                .mark{
+                    margin: 10px 0 0 0;
+                    p{
+                        
+                        padding: 0 50px 0 50px;
+                        font-size: 30px;
+                        span{
+                            display: inline-block;
+                            transform: skew(15deg);
+                        }
+                    }
+                }     
+                h1{
+                    line-height: 1.4;
+                    margin: 5px 0 0 0;
+                    .line{
+                        margin: 10px 0 0 0;
+                        .catch{
+                            letter-spacing: 2px;
+                            font-size: 35px;
+                            padding: 3px 25px 3px 25px;
+                            &::before,
+                            &::after{
+                                width: 100%;
+                                height: 2px;
+                            }
+                            &::before{
+                                top:4px;
+                            }
+                            &::after{
+                                bottom:4px;
+    
+                            }
+                        }
+                        &:nth-child(1){
+                            margin:10px 0 0 0;
+                        }
+                    }
+                }
+                .sentence{
+                    line-height: 1.65;
+                    margin: 25px 0 0 20px;
+                    P{
+                        letter-spacing: 1px;
+                        font-size: 22px;
+                        .grade{
+                            @include gradeText;
+                        }
+                    }    
+                }
+                .button{
+                    width: 420px;
+                    margin: 40px 0 0 0;
+                    padding: 1px 0 0 0;
+                    a{
+                        padding: 5px 0 20px 0;
+                        .top{
+                            margin: -10px 0 0 0;
+                            .catch{
+                                padding: 5px 25px 5px 25px;
+                                &:after {
+                                    border-top: 40px solid #fff;
+                                }
+                                p{
+                                    font-size:18px;
+                                    line-height: 1.65;
+                                    letter-spacing: 1px;
+                                    .small{
+                                        font-size:0.8em;
+                                    }
+                                }
+                            }
+                        }
+                        .bottom{
+                            margin: 4px 0 0 0;
+                            padding: 0px 30px 15px 30px;
+                        }
+                    }
+                    &.consul{
+                        a{
+                            .top{
+                                .catch{
+                                    p{
+                                        color:$orange-color;                               
+                                    }
+                                }
+                            }
+                            .bottom{
+                                .icon{
+                                    line-height: 0;
+                                    width: 30px;
+                                    img{
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                                .catch{
+                                    padding: 0 0px 0 0px;
+                                    font-size:20px;
+                                }
+                                .arrow{
+                                    line-height: 0;
+                                    width: 25px;
+                                    img{
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+} /* 768px～1023px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+
+/**********************************************************************************
+ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+◆	Stylesheet: 767pxまで(スマホ)のモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+    .header03{
+        .logo{
+            right:20px;
+            bottom:20px;
+            width: 25vw;
+            height: 25vw;
+            display: none;
+            img{
+                width: 62.5%;
+                height: auto;
+            }
+        }
+        .back{
+            p{
+                opacity: 0.25;
+                letter-spacing: 5px;
+                font-size: 14vw;
+            }
+            &.top{
+                left:0;
+                top:-5px;
+            }
+            &.bottom{
+                right:0;
+                bottom:-5px;
+            }
+        }
+        .triangle{
+            width: 100vw;
+            height: 180px;
+            &.left-top{
+                clip-path: polygon(0 0, 0% 100%, 100% 0);
+            }
+            &.left-bottom{
+                clip-path: polygon(0 100%, 100% 100%, 0 0);
+            }
+        }
+        .visual{
+            width: 100%;
+            height: 360px;
+            position: relative;
+            .thumb{
+                clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+                li{
+                    img{
+                        border-radius: 0%;
+                    }
+                }
+            }
+        }
+     
+        .container{
+            height: auto;
+            margin: -60px 0 0 0;
+            .text{
+                padding: 0px 0 40px 0%;
+                h2{
+                    line-height: 1.3;
+                    margin: 0 0 0 2%;
+                    .line{
+                        padding: 10px 25px 10px 25px;
+                        &::before{
+                            @include gradeBorder(3px,3px);
+                        }
+                        .catch{
+                            font-size: 21px;
+                        }
+                    }
+                }
+                .mark{
+                    margin: 10px 0 0 2%;
+                    p{
+                        
+                        padding: 0 50px 0 50px;
+                        font-size: 5.5vw;
+                        span{
+                            display: inline-block;
+                            transform: skew(15deg);
+                        }
+                    }
+                }     
+                h1{
+                    line-height: 1.4;
+                    margin: 5px 0 0 0;
+                    .line{
+                        margin: 10px 0 0 0;
+                        .catch{
+                            letter-spacing: 0px;
+                            font-size: 6.0vw;
+                            padding: 8px 15px 8px 15px;
+                            &::before,
+                            &::after{
+                                width: 100%;
+                                height: 2px;
+                            }
+                            &::before{
+                                top:4px;
+                            }
+                            &::after{
+                                bottom:4px;
+    
+                            }
+                        }
+                        &:nth-child(1){
+                            margin:10px 0 0 0;
+                        }
+                    }
+                }
+                .sentence{
+                    line-height: 1.65;
+                    margin: 25px 0 0 20px;
+                    P{
+                        letter-spacing: 1px;
+                        font-size: 22px;
+                        .grade{
+                            @include gradeText;
+                        }
+                    }    
+                }
+                .button{
+                    width: 90%;
+                    margin: 30px auto 0;
+                    padding: 1px 0 0 0;
+                    a{
+                        padding: 5px 0 20px 0;
+                        .top{
+                            margin: -10px 0 0 0;
+                            .catch{
+                                padding: 5px 25px 5px 25px;
+                                &:after {
+                                    border-top: 40px solid #fff;
+                                }
+                                p{
+                                    font-size:4vw;
+                                    line-height: 1.65;
+                                    letter-spacing: 1px;
+                                    .small{
+                                        font-size:0.8em;
+                                    }
+                                }
+                            }
+                        }
+                        .bottom{
+                            margin: 4px 0 0 0;
+                            padding: 0px 30px 15px 30px;
+                        }
+                    }
+                    &.consul{
+                        a{
+                            .top{
+                                .catch{
+                                    p{
+                                        color:$orange-color;                               
+                                    }
+                                }
+                            }
+                            .bottom{
+                                .icon{
+                                    line-height: 0;
+                                    width: 6vw;
+                                    img{
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                                .catch{
+                                    padding: 0 0px 0 0px;
+                                    font-size:4.75vw;
+                                }
+                                .arrow{
+                                    line-height: 0;
+                                    width: 6vw;
+                                    img{
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+} /* 767px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+
+

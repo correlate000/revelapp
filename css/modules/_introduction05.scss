@@ -1,0 +1,470 @@
+@charset "utf-8";
+/*===================================================================================================
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+〇 INTRODUCTION05 〇
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+====================================================================================================*/
+
+.introduction05{
+    padding: 90px 0 90px 0;
+    background-size: 90px 90px;
+    background-position: 50% 50%;
+    background-image:repeating-linear-gradient(
+        90deg,
+        rgba(215,215,215, 0.5) ,
+        rgba(215,215,215,0.5) 1px,
+        transparent 1px,
+        transparent 90px
+        ),
+    repeating-linear-gradient(
+        0deg,
+        rgba(215,215,215,0.5) ,
+        rgba(215,215,215,0.5) 1px,
+        #f7f7f7 1px,
+        #f7f7f7 90px
+    );
+    .container{
+        h2{
+            @include flexBase(center,center);
+            .left{
+                background: rgba($color: $navy-color, $alpha: 0.8);
+                box-shadow: $box-shadow-main;
+                padding: 20px 60px 10px 60px;
+                .logo{
+                    line-height: 0;
+                    width: 300px;
+                    img{
+                        display: block;
+                       
+                        height: auto;
+                    }
+                }
+                .caption{
+                    text-align: center;
+                    color:#fff;
+                    font-size: 18px;
+                }
+            }
+            .plane{
+                padding: 0 0 0 15px;
+                p{ 
+                    @include gradeText;
+                    font-size: 22px;
+                }
+            }
+        }
+        .box-wrapper{
+            max-width: 1920px;
+            width: 96%;
+            margin: 20px auto 0;
+            .box{
+                @include flexBase(center,center);
+                margin: 30px 0 0 0;
+                .visual{
+                    width: 50%;
+                }
+                .text{
+                    padding: 0 0 0 40px;
+                    
+                    .mark{
+                        background: $grade-color;
+                        box-shadow: $box-shadow-main;
+                        border-radius: 50%;
+                        @include flexBase(center,center);
+                        flex-direction: column;
+                        position: relative;
+                        width: 360px;
+                        height: 360px;
+                        .number{
+                            @include flexBase(center,center);
+                            background: #fff;
+                            border:solid 2px $main-color;
+                            border-radius: 50%;
+                            width: 60px;
+                            height: 60px;
+                            margin: -20px 0 0 0;
+                            p{
+                                font-family: 'Jost';
+                                font-weight: 600;
+                                font-size: 26px;
+                                color:$main-color;
+                            }
+                        }
+                        .catch{
+                            color: #fff;
+                            text-align: center;
+                            padding: 0 10px 0 10px;
+                            p{
+                                
+                                font-size: 30px;
+                            }
+                        }
+
+                    }
+                }
+                &:nth-child(2n){
+                    flex-direction: row-reverse;
+                    .text{
+                        padding: 0 40px 0 0
+                    }
+                }
+            }
+        }
+        .explain{
+            .sentence{
+                max-width: 1280px;
+                margin: 15px auto 0;
+                padding: 0 2% 0 2%;
+                p{
+                    text-align: center;
+                    color:$sub-color;
+                    padding: 8px 0 8px 0;
+                    line-height: 2.0;
+                    font-size: 18px;
+                    .bold{
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 1024px～1280px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+
+    .introduction05{
+        padding: 90px 0 90px 0;
+        background-size: 90px 90px;
+        background-position: 50% 50%;
+        background-image:repeating-linear-gradient(
+            90deg,
+            rgba(215,215,215, 0.5) ,
+            rgba(215,215,215,0.5) 1px,
+            transparent 1px,
+            transparent 90px
+            ),
+        repeating-linear-gradient(
+            0deg,
+            rgba(215,215,215,0.5) ,
+            rgba(215,215,215,0.5) 1px,
+            #f7f7f7 1px,
+            #f7f7f7 90px
+        );
+        .container{
+            h2{
+                .left{
+                    padding: 20px 60px 10px 60px;
+                    .logo{
+                        line-height: 0;
+                        width: 250px;
+                        img{
+                            display: block;
+                            height: auto;
+                        }
+                    }
+                    .caption{
+                        font-size: 16px;
+                        margin: -5px 0 0 0;
+                    }
+                }
+                .plane{
+                    padding: 0 0 0 15px;
+                    p{ 
+                        font-size: 20px;
+                    }
+                }
+            }
+            .box-wrapper{
+                max-width: 1920px;
+                width: 98%;
+                margin: 20px auto 0;
+                .box{
+                    margin: 30px 0 0 0;
+                    .visual{
+                        width: 50%;
+                    }
+                    .text{
+                        padding: 0 0 0 30px;
+                        .mark{
+                            width: 320px;
+                            height: 320px;
+                            .number{
+                                left:0;
+                                top:-2px;
+                                width: 50px;
+                                height: 50px;
+                                p{
+                                    font-size: 24px;
+                                }
+                            }
+                            .catch{
+                                padding: 0 10px 0 10px;
+                                p{
+                                    
+                                    font-size: 26px;
+                                }
+                            }
+    
+                        }
+                    }
+                    &:nth-child(2n){
+                        .text{
+                            padding: 0 30px 0 0
+                        }
+                    }
+                }
+            }
+            .explain{
+                .sentence{
+                    max-width: 1280px;
+                    margin: 15px auto 0;
+                    padding: 0 2% 0 2%;
+                    p{
+                        padding: 8px 0 8px 0;
+                        line-height: 2.0;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+} /* 1024px～1280px responsive-close
+
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 768px～1023px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .introduction05{
+        padding: 50px 0 50px 0;
+        background-size: 90px 90px;
+        background-position: 50% 50%;
+        background-image:repeating-linear-gradient(
+            90deg,
+            rgba(215,215,215, 0.5) ,
+            rgba(215,215,215,0.5) 1px,
+            transparent 1px,
+            transparent 90px
+            ),
+        repeating-linear-gradient(
+            0deg,
+            rgba(215,215,215,0.5) ,
+            rgba(215,215,215,0.5) 1px,
+            #f7f7f7 1px,
+            #f7f7f7 90px
+        );
+        .container{
+            h2{
+                .left{
+                    padding: 20px 50px 10px 50px;
+                    .logo{
+                        line-height: 0;
+                        width: 220px;
+                        img{
+                            display: block;
+                            height: auto;
+                        }
+                    }
+                    .caption{
+                        font-size: 16px;
+                        margin: -5px 0 0 0;
+                    }
+                }
+                .plane{
+                    padding: 0 0 0 15px;
+                    p{ 
+                        font-size: 20px;
+                    }
+                }
+            }
+            .box-wrapper{
+                max-width: 1920px;
+                width: 99%;
+                margin: 20px auto 0;
+                .box{
+                    margin: 30px 0 0 0;
+                    .visual{
+                        width: 60%;
+                    }
+                    .text{
+                        padding: 0 0 0 20px;
+                        .mark{
+                            width: 30vw;
+                            height: 30vw;
+                            .number{
+                                left:0;
+                                top:-2px;
+                                width: 50px;
+                                height: 50px;
+                                p{
+                                    font-size: 22px;
+                                }
+                            }
+                            .catch{
+                                padding: 0 10px 0 10px;
+                                p{
+                                    
+                                    font-size: 24px;
+                                }
+                            }
+    
+                        }
+                    }
+                    &:nth-child(2n){
+                        .text{
+                            padding: 0 20px 0 0
+                        }
+                    }
+                }
+            }
+            .explain{
+                .sentence{
+                    max-width: 1280px;
+                    margin: 15px auto 0;
+                    padding: 0 2% 0 2%;
+                    p{
+                        padding: 8px 0 8px 0;
+                        line-height: 2.0;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+} /* 768px～1023px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+
+/**********************************************************************************
+ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+◆	Stylesheet: 767pxまで(スマホ)のモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+    .introduction05{
+        padding: 35px 0 35px 0;
+        background-size: 30px 30px;
+        background-position: 50% 50%;
+        background-image:repeating-linear-gradient(
+            90deg,
+            rgba(215,215,215, 0.5) ,
+            rgba(215,215,215,0.5) 1px,
+            transparent 1px,
+            transparent 30px
+            ),
+        repeating-linear-gradient(
+            0deg,
+            rgba(215,215,215,0.5) ,
+            rgba(215,215,215,0.5) 1px,
+            #f7f7f7 1px,
+            #f7f7f7 30px
+        );
+        .container{
+            h2{
+                .left{
+                    padding: 20px 40px 10px 40px;
+                    .logo{
+                        line-height: 0;
+                        width: 40vw;
+                        img{
+                            display: block;
+                            height: auto;
+                        }
+                    }
+                    .caption{
+                        font-size: 3.75vw;
+                        margin: -5px 0 0 0;
+                    }
+                }
+                .plane{
+                    padding: 0 0 0 15px;
+                    p{ 
+                        font-size: 4.5vw;
+                    }
+                }
+            }
+            .box-wrapper{
+                max-width: 1920px;
+                width: 100%;
+                margin: 20px auto 0;
+                .box{
+                    margin: 50px 0 0 0;
+                    display: block;
+                    .visual{
+                        width: 100%;
+                    }
+                    .text{
+                        padding: 0 4% 0 4%;
+                        margin: 20px 0 0 0;
+                        .mark{
+                            width: 60vw;
+                            height: 60vw;
+                            margin: 0 auto 0;
+                            .number{
+                                left:0;
+                                top:-2px;
+                                width: 10vw;
+                                height: 10vw;
+                                p{
+                                    font-size: 5vwpx;
+                                }
+                            }
+                            .catch{
+                                padding: 0 10px 0 10px;
+                                p{
+                                    
+                                    font-size: 5.5vw;
+                                }
+                            }
+    
+                        }
+                    }
+                    &:nth-child(2n){
+                        .text{
+                            padding: 0 20px 0 0
+                        }
+                    }
+                }
+            }
+            .explain{
+                .sentence{
+                    max-width: 100%;
+                    margin: 15px auto 0;
+                    padding: 0 4% 0 4%;
+                    p{
+                        padding: 8px 0 8px 0;
+                        line-height: 2.0;
+                        font-size: 4vw;
+                        
+                    }
+                }
+            }
+        }
+    }
+} /* 767px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+
+

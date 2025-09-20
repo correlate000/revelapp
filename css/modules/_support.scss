@@ -1,0 +1,471 @@
+@charset "utf-8";
+/*===================================================================================================
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+〇 SUPPORT 〇
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+====================================================================================================*/
+
+.support{
+    background: url(../images/target-suit-bg.jpg) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    padding: 50px 0 70px 0;
+    .container{
+        @include flexBase(center,center);
+        .left{
+
+            .title{
+                .border{
+                    background: $grade-color;
+                    width: 1.5px;
+                    height: 100px;
+                    margin: 0 auto 0;
+        
+                }
+                .en{
+                    text-align: center;
+                    p{
+                        font-family: 'Antonio';
+                        @include gradeText;
+                        letter-spacing: 3px;
+                        font-size: 20px;
+                    }
+                }
+    
+                h2{
+                    text-align: center;
+                    margin: 10px 0 0 0;
+                    .catch{
+                        color:$dark-color;
+                        letter-spacing: 2px;
+                        font-size: 42px;
+                        .grade{
+                            @include gradeText;
+                            display: inline;
+                        }
+                    }
+                }
+                h3{
+                    margin: 20px 0 0 0;
+                    text-align: center;
+                    .line{
+                        position: relative;
+                        display: inline-block;
+                        background: #fff;
+                        box-shadow: $box-shadow-main;
+                        padding: 25px 40px 25px 40px;
+                        border-radius: 100px;
+                        .catch{
+                            position: relative;
+                            z-index: 2;
+                            @include gradeText03;
+                            letter-spacing: 2px;
+                            font-size: 24px;
+                        }
+        
+                    }
+                    .plane{
+                        color:$sub-color;
+                        padding: 0 10px 0 10px;
+                        font-size: 24px;
+                    }
+        
+                }
+            }
+            ul{
+                margin: 30px auto 0;
+                max-width: 1280px;
+                li{
+                    position: relative;
+                    @include flexBase(center,flex-start);
+                    background: #fff;
+                    box-shadow: $box-shadow-main;
+
+                    margin: 10px 0 0 0;
+                    padding: 10px 40px 10px 40px;
+                    &::before{
+                        content:"";
+                        position: absolute;
+                        left:50%;
+                        top:0;
+                        transform: translate(-50%,0);
+                        background: $grade-color;
+                        width: 100%;
+                        height: 3px;
+    
+                    }
+                    img{
+                        width: 40px;
+                        height: auto;
+                    }
+                    p{
+                        color:$sub-color;
+                        font-weight: 600;
+                        font-size: 20px;
+                        padding: 0 0 0 10px;
+                    }
+                }
+            }
+            .sentence{
+                margin: 10px 0 0 0;
+                p{
+                    padding: 5px 0 5px 0;
+                    color: $main-color;
+                    line-height: 1.8;
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+            }
+        }
+        .right{
+            position: relative;
+            width: 48%;
+            padding: 0 0 0 2%;
+            .back{
+                position: absolute;
+                font-family: "Antonio";
+                right:0;
+                top:-20px;
+                opacity: 0.8;
+                line-height: 1.0;
+                p{
+                    @include gradeText;
+                    font-size: 80px;
+                }
+            }
+            .thumb{
+                width: 100%;
+                height: 700px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+
+}
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 1024px～1280px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .support{
+        padding: 50px 0 70px 0;
+        .container{
+            padding: 0 0 0 1%;
+            .left{
+                width: 55%;
+                .title{
+                    h2{
+                        margin: 10px 0 0 0;
+                        .catch{
+                            letter-spacing: 2px;
+                            font-size: 35px;
+                        }
+                    }
+                    h3{
+                        margin: 20px 0 0 0;
+                        .line{
+                            padding: 25px 40px 25px 40px;
+                            border-radius: 100px;
+                            .catch{
+                                letter-spacing: 2px;
+                                font-size: 20px;
+                            }
+            
+                        }
+                        .plane{
+                            color:$sub-color;
+                            padding: 0 10px 0 10px;
+                            font-size: 24px;
+                        }
+            
+                    }
+                }
+                ul{
+                    margin: 30px auto 0;
+                    max-width: 1280px;
+                    li{
+                        margin: 10px 0 0 0;
+                        padding: 10px 30px 10px 30px;
+                        &::before{
+                            width: 100%;
+                            height: 3px;
+        
+                        }
+                        img{
+                            width: 35px;
+                            height: auto;
+                        }
+                        p{
+                            font-size: 18px;
+                            padding: 0 0 0 10px;
+                        }
+                    }
+                }
+                .sentence{
+                    margin: 10px 0 0 0;
+                    p{
+                        padding: 5px 0 5px 0;
+                        line-height: 1.8;
+                        font-size: 18px;
+                    }
+                }
+            }
+            .right{
+                width: 45%;
+                padding: 0 0 0 2%;
+                .back{
+                    right:0;
+                    top:-20px;
+                    opacity: 0.8;
+                    line-height: 1.0;
+                    p{
+                        font-size: 50px;
+                    }
+                }
+                .thumb{
+                    width: 100%;
+                    height: 700px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    
+    
+    }
+} /* 1024px～1280px responsive-close
+
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 768px～1023px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .support{
+        padding: 50px 0 70px 0;
+        .container{
+            padding: 0 2% 0 2%;
+            display: block;
+            .left{
+                width: 100%;
+                .title{
+                    h2{
+                        margin: 10px 0 0 0;
+                        .catch{
+                            letter-spacing: 2px;
+                            font-size: 35px;
+                        }
+                    }
+                    h3{
+                        margin: 20px 0 0 0;
+                        .line{
+                            padding: 25px 40px 25px 40px;
+                            border-radius: 100px;
+                            .catch{
+                                letter-spacing: 2px;
+                                font-size: 20px;
+                            }
+            
+                        }
+                        .plane{
+                            color:$sub-color;
+                            padding: 0 10px 0 10px;
+                            font-size: 24px;
+                        }
+            
+                    }
+                }
+                ul{
+                    margin: 30px auto 0;
+                    max-width: 1280px;
+                    li{
+                        margin: 10px 0 0 0;
+                        padding: 10px 30px 10px 30px;
+                        &::before{
+                            width: 100%;
+                            height: 3px;
+        
+                        }
+                        img{
+                            width: 35px;
+                            height: auto;
+                        }
+                        p{
+                            font-size: 18px;
+                            padding: 0 0 0 10px;
+                        }
+                    }
+                }
+                .sentence{
+                    margin: 10px 0 0 0;
+                    p{
+                        padding: 5px 0 5px 0;
+                        line-height: 1.8;
+                        font-size: 18px;
+                    }
+                }
+            }
+            .right{
+                width: 100%;
+                padding: 50px 0 0 0%;
+                .back{
+                    right:0;
+                    top:-20px;
+                    opacity: 0.8;
+                    line-height: 1.0;
+                    p{
+                        font-size: 50px;
+                    }
+                }
+                .thumb{
+                    width: 100%;
+                    height: 400px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    
+    
+    }
+} /* 768px～1023px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+
+/**********************************************************************************
+ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+◆	Stylesheet: 767pxまで(スマホ)のモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+    .support{
+        padding: 35px 0 50px 0;
+        .container{
+            padding: 0 0% 0 0%;
+            display: block;
+            .left{
+                width: 100%;
+                .title{
+                    h2{
+                        margin: 10px 0 0 0;
+                        .catch{
+                            letter-spacing: 1px;
+                            font-size: 5.75vw;
+                        }
+                    }
+                    h3{
+                        margin: 20px 0 0 0;
+                        .line{
+                            padding: 35px 30px 35px 30px;
+                            border-radius: 60px;
+                            .catch{
+                                letter-spacing: 0px;
+                                font-size: 4.25vw;
+                            }
+            
+                        }
+                        .plane{
+                            color:$sub-color;
+                            padding: 0 10px 0 10px;
+                            font-size: 24px;
+                        }
+            
+                    }
+                }
+                ul{
+                    margin: 30px auto 0;
+                    max-width: 1280px;
+                    padding: 0 3% 0 3%;
+                    li{
+                        margin: 10px 0 0 0;
+                        padding: 10px 30px 10px 30px;
+                        &::before{
+                            width: 100%;
+                            height: 3px;
+        
+                        }
+                        img{
+                            width: 6vw;
+                            height: auto;
+                        }
+                        p{
+                            width: calc(100% - 6vw);
+                            font-size: 4.5vw;
+                            padding: 0 0 0 10px;
+                        }
+                    }
+                }
+                .sentence{
+                    margin: 10px 0 0 0;
+                    padding: 0 4% 0 4%;
+                    p{
+                        padding: 5px 0 5px 0;
+                        line-height: 1.8;
+                        font-size: 4vw;
+                        br{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .right{
+                width: 100%;
+                padding: 50px 0 0 0%;
+                margin: 50px 0 0 0;
+                .back{
+                    right:0;
+                    top:-10px;
+                    opacity: 0.8;
+                    line-height: 1.0;
+                    p{
+                        font-size: 10vw;
+                    }
+                }
+                .thumb{
+                    width: 100%;
+                    height: 400px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    
+    
+    }
+} /* 767px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+
+

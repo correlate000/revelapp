@@ -1,0 +1,269 @@
+@charset "utf-8";
+
+
+
+
+/*===================================================================================================
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+〇 THANKS01 〇
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+====================================================================================================*/
+#thanks{
+	.title{
+        background: $grade-color;
+        padding: 30px 0 30px 0;
+        text-align: center;
+        color: #fff;
+        h3 {
+            text-align: center;
+            padding: 10px 15px;
+            line-height: 1.25;
+            .cover{
+                display: inline-block;
+                border: solid 2px #fff;
+                transform: skew(-15deg);
+                margin: 0 auto 5px;
+                color: #fff;
+                font-weight: bold;
+                font-size: 20px;
+                padding: 8px 40px 8px 40px;
+                span {
+                    display: block;
+                    transform: skew(15deg);
+                }
+            }
+        }
+        h2 {
+            font-size: 42px;
+            margin: 10px 0 10px 0;
+            line-height: 1.35;
+            font-weight: 600;
+            font-style: normal;
+            .small{
+                font-size: 0.7em;
+            }
+        }
+        
+        .caption {
+            font-size: 17px;
+            font-weight: 500;
+            margin: 0 0 0 0;
+            padding: 0 0px 5px 0px;
+        }
+    }
+	.wrapper{
+		.inner{
+			width: 960px;
+			margin: 80px auto 80px;
+			padding: 40px 0;
+			background: #ffffff;
+			border: 3px solid $main-color;
+			h1 {
+				width: 90%;
+				margin: 0 auto;
+				font-size: 27px;
+				font-weight: bold;
+				padding: 0 0 16px 0;
+				border-bottom: 3px solid $main-color;
+				color: $main-color;
+			}
+			.sentence{
+				h2 {
+					width: 90%;
+					margin: 1.5em auto 0;
+					font-size: 135%;
+					font-weight: bold;
+					padding: 0 0 13px 0;
+					border-bottom: 2px solid $main-color;
+					color: $main-color;
+				}
+				&.main p {
+					width: 90%;
+					margin: 0 auto;
+					margin-top: 2em;
+					font-family: fot-tsukuardgothic-std, sans-serif;
+					font-weight: 700;
+					font-style: normal;
+					font-size: 18px;
+					line-height: 1.7;
+				  }
+				  
+				&.sub p {
+					width: 90%;
+					margin: 0 auto;
+					margin-top: 2em;
+					color: #3f1801;
+					/* font-family: fot-tsukuardgothic-std, sans-serif; */
+					font-weight: 700;
+					font-style: normal;
+					font-size: 18px;
+					line-height: 1.6;
+				}
+			}
+		}
+	}
+}
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 1000px以下のモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and ( max-width: 1000px ) {
+	#thanks{
+		.wrapper{
+			.inner{
+				width: 95%;
+				margin: 40px auto 40px;
+			}
+		}
+	}
+	
+}
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 1024px～1280px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+	#thanks{
+		.title{
+            padding: 30px 0 30px 0;
+            h3 {
+                padding: 10px 15px;
+                line-height: 1.25;
+                .cover{
+                    margin: 0 auto 5px;
+                    font-size: 20px;
+                    padding: 8px 40px 8px 40px;
+                    span {
+                        display: block;
+                    }
+                }
+            }
+            h2 {
+                font-size: 42px;
+                margin: 10px 0 10px 0;
+                line-height: 1.35;
+                .small{
+                    font-size: 0.7em;
+                }
+            }
+            
+            .caption {
+                font-size: 17px;
+                font-weight: 500;
+                margin: 0 0 0 0;
+                padding: 0 0px 5px 0px;
+            }
+        }
+	}
+} /* 1024px～1280px responsive-close
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 768px～1023px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	#thanks{
+		.title{
+            padding: 30px 0 30px 0;
+            h3 {
+                padding: 10px 15px;
+                line-height: 1.25;
+                .cover{
+                    margin: 0 auto 5px;
+                    font-size: 20px;
+                    padding: 8px 40px 8px 40px;
+                    span {
+                        display: block;
+                    }
+                }
+            }
+            h2 {
+                font-size: 42px;
+                margin: 10px 0 10px 0;
+                line-height: 1.35;
+                .small{
+                    font-size: 0.7em;
+                }
+            }
+            
+            .caption {
+                font-size: 17px;
+                font-weight: 500;
+                margin: 0 0 0 0;
+                padding: 0 0px 5px 0px;
+            }
+        }
+	}
+} /* 768px～1023px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+
+/**********************************************************************************
+ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+◆	Stylesheet: 767pxまで(スマホ)のモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+	#thanks{
+		.title{
+            padding: 30px 0 30px 0;
+            h3 {
+                padding: 10px 15px;
+                line-height: 1.25;
+                .cover{
+                    margin: 0 auto 5px;
+                    font-size: 4vw;
+                    padding: 8px 40px 8px 40px;
+                    span {
+                        display: block;
+                    }
+                }
+            }
+            h2 {
+                font-size: 7.5vw;
+                margin: 10px 0 10px 0;
+                line-height: 1.35;
+                .small{
+                    font-size: 0.7em;
+                }
+            }
+            
+            .caption {
+                font-size: 4vw;
+                margin: 0 0 0 0;
+                padding: 0 0px 5px 0px;
+            }
+        }
+	}
+} /* 767px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/

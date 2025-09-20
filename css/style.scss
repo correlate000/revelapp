@@ -1,0 +1,35 @@
+/* 基本設定 */
+@import "default/variables";
+@import "default/mixin";
+@import "default/global";
+@import "default/basic-fade-slide";
+
+/* modules */
+@import "modules/font-face";
+@import "modules/hamburger-menu";
+@import "modules/header03";
+@import "modules/header-to";
+@import "modules/content-basic";
+@import "modules/recommend";
+@import "modules/targeting";
+@import "modules/target-suit";
+@import "modules/game-list";
+@import "modules/point";
+@import "modules/introduction05";
+@import "modules/thanks";
+@import "modules/feature";
+@import "modules/future";
+@import "modules/simple-cta";
+@import "modules/support";
+@import "modules/person";
+@import "modules/flow";
+@import "modules/faq";
+@import "modules/thought";
+@import "modules/cta";
+@import "modules/mailform";
+@import "modules/footer";
+@import "modules/thanks";
+
+
+/* breakpoints */
+//@import 'breakpoints/';

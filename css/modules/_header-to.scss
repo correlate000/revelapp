@@ -1,0 +1,355 @@
+@charset "utf-8";
+
+
+/*===================================================================================================
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+〇 HEADER-TO 〇
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+====================================================================================================*/
+
+.header-to{
+	max-width: 1920px;
+	padding: 1px 1.5% 50px 1.5%;
+	margin: -30px auto 0;
+	.box-wrapper{
+		margin:0 auto 0px;
+		display: flex;
+		justify-content: space-between;
+		align-items: stretch;
+		flex-wrap: wrap;
+		position: relative;
+		z-index: 20;
+		.box{
+			background: #ffffff;
+			box-shadow: rgba(255, 248, 190, 0.15) 0px 5px 15px,5px 5px 0 0 $light-color;
+
+			width: calc(97% / 3);
+			margin:0 1.5% 0 0;
+			padding:20px 20px 20px 20px;
+			display: flex;
+			justify-content: start;
+			align-items: center;
+			flex-wrap: wrap;
+			position: relative;
+			&::before{
+				@include gradeBorder(3px,4px);
+			}
+			&:nth-child(3n){
+				margin:0 0% 0 0;
+			}
+			.icon{
+				width: 85px;
+				padding:0 0 0 0;
+				margin: 0 15px 0 0;
+				position: relative;
+				z-index: 3;
+				line-height: 0;
+				img{
+					width: 100%;
+					height: auto;
+				}
+
+			}
+			.text{
+				position: relative;
+				z-index: 3;
+				font-style: normal;			  
+				width: calc(100% - 100px);
+				border-left:solid 2px $light-color;
+				padding:0 0 0 15px;
+				text-align: center;
+				h3{
+					font-weight: 600;
+					.cover{
+						display: inline-block;
+						color:#fff;
+						background: $grade-color;
+						letter-spacing: 1px;
+						line-height: 1.25;
+						padding: 3px 15px 5px 15px;
+						font-size:17px;
+					}
+				}
+				p{
+					@include gradeText;
+					font-weight: 700;
+					margin: 3px 0 0 0;
+					font-size:22px;
+					.red{
+						color:$main-color;
+					}
+					.kome{
+						font-size: 0.5em;
+					}
+				}
+			}
+		}
+	}
+	.explain{
+		margin: 10px 0 0 0;
+		.caption{
+			p{
+				font-size: 16px;
+				color:$black34-color;
+				letter-spacing: 2px;
+			}
+		}
+	}
+}
+
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 1024px～1280px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+	.header-to{
+		max-width: 100%;
+		padding: 1px 1% 30px 1%;
+		margin: -30px auto 0;
+		.box-wrapper{
+			.box{
+				width: 32.5%;  
+				margin:0 calc(2.5% / 3) 0 0;
+				padding:10px 10px 10px 10px;
+				&:nth-child(3n){
+					margin:0 0% 0 0;
+				}
+				.icon{
+					width: 6.5vw;
+					padding:0 0 0 0;
+					margin: 0 10px 0 0;
+					position: relative;
+					line-height: 0;
+					img{
+						width: 100%;
+						height: auto;
+					}
+					&::after{
+						content:"";
+						position: absolute;
+						width: 92%;
+						height: 92%;
+						top:50%;
+						left: 50%;
+						transform: translate(-50%,-50%);
+					}
+				}
+				.text{
+					width: calc(100% - 6.5vw - 10px);
+
+					padding:0 0 0 10px;
+					h3{
+						.cover{
+							padding: 3px 10px 3px 10px;
+							font-size:15px;
+						}
+					}
+					p{
+						margin: 5px 0 0 0;
+						line-height: 1.35;
+						font-size:14px;
+						.pc-disblock{
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		.explain{
+			margin: 10px 0 0 0;
+			.caption{
+				p{
+					font-size: 15px;
+					letter-spacing: 2px;
+				}
+			}
+		}	
+	}
+} /* 1024px～1280px responsive-close
+
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 768px～1023px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.header-to{
+		max-width: 100%;
+		padding: 1px 1% 40px 1%;
+		margin: -30px auto 0;
+		.box-wrapper{
+			@include flexBase(stretch,center);
+			flex-wrap: wrap;
+			.box{
+				width: 48.5%;  
+				margin:0 3% 0 0;
+				padding:10px 10px 10px 10px;
+				&:nth-child(3n){
+					margin:20px 0% 0 0;
+				}
+				&:nth-child(2){
+					margin: 0 0 0 0;
+				}
+				.icon{
+					width: 90px;
+					padding:0 0 0 0;
+					margin: 0 10px 0 0;
+					position: relative;
+					line-height: 0;
+					img{
+						width: 100%;
+						height: auto;
+					}
+					&::after{
+						content:"";
+						position: absolute;
+						width: 92%;
+						height: 92%;
+						top:50%;
+						left: 50%;
+						transform: translate(-50%,-50%);
+					}
+				}
+				.text{
+					width: calc(100% - 90px - 10px);
+
+					padding:0 0 0 10px;
+					h3{
+						.cover{
+							padding: 3px 10px 3px 10px;
+							font-size:15px;
+						}
+					}
+					p{
+						margin: 5px 0 0 0;
+						line-height: 1.35;
+						font-size:16px;
+						.pc-disblock{
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		.explain{
+			margin: 10px 0 0 0;
+			.caption{
+				p{
+					font-size: 15px;
+					letter-spacing: 2px;
+				}
+			}
+		}	
+	}	
+} /* 768px～1023px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+
+/**********************************************************************************
+ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+◆	Stylesheet: 767pxまで(スマホ)のモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+	.header-to{
+		max-width: 100%;
+		padding: 1px 2% 30px 2%;
+		margin: -30px auto 0;
+		.box-wrapper{
+			display: block;
+			.box{
+				width: 100%;
+				margin:20px 0 0 0;
+				padding:10px 5px 10px 10px;
+				&:nth-child(3n){
+					margin:20px 0 0 0;
+				}
+				.icon{
+					width: 16vw;
+					height: 16vw;
+					padding:0 0 0 0;
+					margin: 0 10px 0 0;
+					position: relative;
+					line-height: 0;
+					img{
+						width: 100%;
+						height: auto;
+					}
+					&::after{
+						content:"";
+						position: absolute;
+						width: 92%;
+						height: 92%;
+						top:50%;
+						left: 50%;
+						transform: translate(-50%,-50%);
+					}
+				}
+				.text{
+					width: calc(100% - 16vw - 10px);
+					padding:0 0 0 10px;
+					//font-family: fot-tsukuardgothic-std, sans-serif;
+					h3{
+						.cover{
+							display: inline-block;
+							padding: 3px 5px 3px 5px;
+							font-size:4vw;
+						}
+					}
+					p{
+						margin: 5px 0 0 0;
+						line-height: 1.35;
+						font-size:4.25vw;
+					}
+				}
+			}
+		}
+		.explain{
+			margin: 10px 0 0 0;
+			.caption{
+				p{
+					font-size: 3.75vw;
+					letter-spacing: 2px;
+				}
+			}
+		}	
+	}
+} /* 767px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □   
+
+◆	Stylesheet: さらに刻んで320pxまでのモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+
+@media screen and (max-width: 320px) {
+
+} /* 320px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+

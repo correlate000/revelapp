@@ -1,0 +1,549 @@
+@charset "utf-8";
+/*===================================================================================================
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+〇 POINT 〇
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+====================================================================================================*/
+
+.point{
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg,#092981 0%,#07557b 100%);
+    .deco{
+        position: absolute;
+        z-index: 1;
+        &.left{
+            left:-15px;
+            top:5%;
+            width: 210px;
+        }
+        &.right{
+            right:-10px;
+            bottom:5%;
+            width: 250px;
+        }
+
+    }
+    .container{
+        position: relative;
+        z-index: 2;
+        padding: 70px 0 50px 0;
+        .title{
+            .border{
+                background: $grade-color;
+                width: 1.5px;
+                height: 100px;
+                margin: 0 auto 0;
+
+            }
+            .en{
+                text-align: center;
+                p{
+                    font-family: 'Antonio';
+                    @include gradeText;
+                    letter-spacing: 3px;
+                    font-size: 20px;
+                }
+            }
+            h2{
+                text-align: center;
+                margin: 10px 0 0 0;
+                .catch{
+                    color:#fff;
+                    letter-spacing: 2px;
+                    font-size: 42px;
+                }
+            }
+        }
+        .box-wrapper{
+            max-width: 1380px;
+            margin: 0 auto 0;
+            width: 94%;
+            .box{
+                position: relative;
+                background: #fff;
+                box-shadow: $box-shadow-plane;
+                @include flexBase(flex-start,center);
+                border-radius: 50px 50px 50px 50px;
+                padding: 50px 50px 50px 50px;
+                margin: 50px 0 0 0;
+                &::before{
+                    content:"";
+                    z-index: 1;
+                    position: absolute; 
+                }
+                
+                .thumb{
+                    position: relative;
+                    z-index: 2;
+                    width: 40%;
+                    height: 340px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 50px 0 0 50px;
+                    }
+                }
+                .text{
+                    position: relative;
+                    z-index: 2;
+                    width: calc(100% - 40%);
+                    padding: 0 0 0 45px;
+                    .semi-title{
+                        @include flexBase(center,flex-start);
+                        .number{
+                            .sub,
+                            .main{
+                                line-height: 1.1;
+                                text-align: center;
+                                p{
+                                    font-family: 'Antonio';
+                                    font-weight: 600;
+                                    @include gradeText;
+                                }
+                            }
+                            .sub{
+                                font-size: 20px;
+                            }
+                            .main{
+                                font-size: 65px;
+                            }
+                        }
+                        h3{
+                            padding: 0 0 0 20px;
+                            .catch{
+                                color: $sub-color;
+                                font-size: 38px;
+                            }
+                        }
+                    }
+                    .sentence{
+                        margin: 20px 0 0 0;
+                        p{
+                            color:$dark-color;
+                            font-weight: 600;
+                            padding: 10px 0 10px 0;
+                            line-height: 2.2;
+                            font-size: 18px;
+                        }
+                    }
+                }
+                &:nth-child(1){
+                    &::before{
+                        width: 100px;
+                        height: 100%;
+                    }
+                }
+                &:nth-child(2n){
+                    flex-direction: row-reverse;
+                    .thumb{
+                        img{
+                            border-radius: 0 50px 50px 0;
+                        }
+                    }
+                    .text{
+                        padding: 0 45px 0 0;
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 1024px～1280px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+
+    .point{
+        .deco{
+            &.left{
+                left:-15px;
+                top:5%;
+                width: 210px;
+            }
+            &.right{
+                right:-10px;
+                bottom:5%;
+                width: 250px;
+            }
+    
+        }
+        .container{
+            padding: 70px 0 50px 0;
+            .title{
+                .border{
+                    width: 1.5px;
+                    height: 80px;
+                    margin: 0 auto 0;
+    
+                }
+                .en{
+                    p{
+                        letter-spacing: 3px;
+                        font-size: 20px;
+                    }
+                }
+                h2{
+                    margin: 10px 0 0 0;
+                    .catch{
+                        letter-spacing: 2px;
+                        font-size: 38px;
+                    }
+                }
+            }
+            .box-wrapper{
+                max-width: 1380px;
+                margin: 0 auto 0;
+                width: 96%;
+                .box{
+                    border-radius: 50px 50px 50px 50px;
+                    padding: 40px 40px 40px 40px;
+                    margin: 50px 0 0 0;
+                    
+                    .thumb{
+                        width: 38%;
+                        height: 340px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 50px 0 0 50px;
+                        }
+                    }
+                    .text{
+                        width: calc(100% - 38%);
+                        padding: 0 0 0 25px;
+                        .semi-title{
+                            .number{
+                                .sub,
+                                .main{
+                                    line-height: 1.1;
+                                }
+                                .sub{
+                                    font-size: 15px;
+                                }
+                                .main{
+                                    font-size: 56px;
+                                }
+                            }
+                            h3{
+                                padding: 0 0 0 15px;
+                                .catch{
+                                    font-size: 30px;
+                                    .sp-disblock{
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                        .sentence{
+                            margin: 20px 0 0 0;
+                            p{
+                                padding: 10px 0 10px 0;
+                                line-height: 2.2;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    &:nth-child(1){
+                        &::before{
+                            width: 100px;
+                            height: 100%;
+                        }
+                    }
+                    &:nth-child(2n){
+                        flex-direction: row-reverse;
+                        .thumb{
+                            img{
+                                border-radius: 0 50px 50px 0;
+                            }
+                        }
+                        .text{
+                            padding: 0 25px 0 0;
+                        }
+                    }
+    
+    
+                }
+            }
+        }
+    }
+} /* 1024px～1280px responsive-close
+
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 768px～1023px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .point{
+        .deco{
+            &.left{
+                left:-15px;
+                top:5%;
+                width: 210px;
+            }
+            &.right{
+                right:-10px;
+                bottom:5%;
+                width: 250px;
+            }
+    
+        }
+        .container{
+            padding: 70px 0 50px 0;
+            .title{
+                .border{
+                    width: 1.5px;
+                    height: 80px;
+                    margin: 0 auto 0;
+    
+                }
+                .en{
+                    p{
+                        letter-spacing: 3px;
+                        font-size: 20px;
+                    }
+                }
+                h2{
+                    margin: 10px 0 0 0;
+                    .catch{
+                        letter-spacing: 2px;
+                        font-size: 38px;
+                    }
+                }
+            }
+            .box-wrapper{
+                max-width: 1380px;
+                margin: 0 auto 0;
+                width: 96%;
+                .box{
+                    border-radius: 50px 50px 50px 50px;
+                    padding: 30px 30px 30px 30px;
+                    margin: 50px 0 0 0;
+                    
+                    .thumb{
+                        width: 38%;
+                        height: 340px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 50px 0 0 50px;
+                        }
+                    }
+                    .text{
+                        width: calc(100% - 38%);
+                        padding: 0 0 0 25px;
+                        .semi-title{
+                            .number{
+                                .sub,
+                                .main{
+                                    line-height: 1.1;
+                                }
+                                .sub{
+                                    font-size: 15px;
+                                }
+                                .main{
+                                    font-size: 56px;
+                                }
+                            }
+                            h3{
+                                padding: 0 0 0 15px;
+                                .catch{
+                                    font-size: 30px;
+                                    .sp-disblock{
+                                        display: none;
+                                    }
+                                    br{
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                        .sentence{
+                            margin: 20px 0 0 0;
+                            p{
+                                padding: 10px 0 10px 0;
+                                line-height: 2.2;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    &:nth-child(1){
+                        &::before{
+                            width: 100px;
+                            height: 100%;
+                        }
+                    }
+                    &:nth-child(2n){
+                        flex-direction: row-reverse;
+                        .thumb{
+                            img{
+                                border-radius: 0 50px 50px 0;
+                            }
+                        }
+                        .text{
+                            padding: 0 25px 0 0;
+                        }
+                    }
+    
+    
+                }
+            }
+        }
+    }
+} /* 768px～1023px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+
+/**********************************************************************************
+ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+◆	Stylesheet: 767pxまで(スマホ)のモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+    .point{
+        .deco{
+            &.left{
+                left:-15px;
+                top:5%;
+                width: 210px;
+            }
+            &.right{
+                right:-10px;
+                bottom:5%;
+                width: 250px;
+            }
+    
+        }
+        .container{
+            padding: 50px 0 35px 0;
+            .title{
+                .border{
+                    width: 1px;
+                    height: 60px;
+                    margin: 0 auto 0;
+    
+                }
+                .en{
+                    p{
+                        letter-spacing: 3px;
+                        font-size: 4vw;
+                    }
+                }
+                h2{
+                    margin: 10px 0 0 0;
+                    .catch{
+                        letter-spacing: 2px;
+                        font-size: 7vw;
+                    }
+                }
+            }
+            .box-wrapper{
+                max-width: 1380px;
+                margin: 0 auto 0;
+                width: 96%;
+                .box{
+                    border-radius: 50px 50px 50px 50px;
+                    padding: 30px 25px 30px 25px;
+                    margin: 30px 0 0 0;
+                    display: block;
+                    .thumb{
+                        width: 100%;
+                        height: 240px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 50px 0 0 50px;
+                        }
+                    }
+                    .text{
+                        width: calc(100% - 0%);
+                        padding: 20px 0px 0 0px;
+                        .semi-title{
+                            .number{
+                                .sub,
+                                .main{
+                                    line-height: 1.1;
+                                }
+                                .sub{
+                                    font-size: 3vw;
+                                }
+                                .main{
+                                    font-size: 8vw;
+                                }
+                            }
+                            h3{
+                                padding: 0 0 0 15px;
+                                .catch{
+                                    font-size: 6vw;
+                                    .sp-disblock{
+                                        display: none;
+                                    }
+                                    br{
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                        .sentence{
+                            margin: 20px 0 0 0;
+                            p{
+                                padding: 10px 0 10px 0;
+                                line-height: 2.2;
+                                font-size: 4vw;
+                            }
+                        }
+                    }
+                    &:nth-child(1){
+                        &::before{
+                            width: 100px;
+                            height: 100%;
+                        }
+                    }
+                    &:nth-child(2n){
+                        flex-direction: row-reverse;
+                        .thumb{
+                            img{
+                                border-radius: 0 50px 50px 0;
+                            }
+                        }
+                        .text{
+                            padding: 20px 0px 0 0px;
+                        }
+                    }
+    
+    
+                }
+            }
+        }
+    }
+} /* 767px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+
+

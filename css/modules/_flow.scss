@@ -1,0 +1,590 @@
+@charset "utf-8";
+/*===================================================================================================
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+〇 FLOW 〇
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+====================================================================================================*/
+
+.flow{
+    overflow: hidden;
+    .wrapper{
+        background-color:hsla(0,0%,100%,1);
+        background-image:
+        radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%),
+        radial-gradient(at 80% 50%, hsla(0,100%,97%,1) 0px, transparent 50%),
+        radial-gradient(at 80% 100%, hsla(355,100%,96%,1) 0px, transparent 50%),
+        radial-gradient(at 0% 0%, hsla(340,100%,96%,1) 0px, transparent 50%);
+        background-size: cover;
+        padding: 1px 0 50px 0;
+        position: relative;
+        z-index: 3;
+        margin: 0px 0 0 0;
+
+        .inner{
+            position: relative;
+            z-index: 3;
+            max-width: 1680px;
+            margin: -40px auto 0;
+            padding: 0 2% 0 2%;
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    width: 30%;
+                    margin: 0 0 60px 0;
+                    background: #fff;
+                    padding: 0 0 0px 0;
+                    box-shadow: 5px 5px 0px 0px $light-color, inset 0 0 0 3px #fff;
+                    position: relative;
+                    &::before{
+                        @include gradeBorder(4px,3px)
+                    }
+                    .thumb{
+                        width: 100%;
+                        line-height: 0;
+                        padding: 0px 0px 0px 0px;
+                        position: relative;
+                        .semi{
+                            position: absolute;
+                            top:10px;
+                            left: 10px;
+                            z-index:2;
+                            font-family: 'Antonio';
+                            font-weight: 600;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                            width: 10%;
+                            background:$main-color;
+                            color:#fff;
+                            font-size:15px;
+                            font-weight: 900;
+                            line-height: 1.1;
+                            //border-radius: 80px;
+                            width: 60px;
+                            height: 60px;
+                            span.big{
+                            font-size:22px;
+                            }
+                  
+                          }
+
+                        .cover{
+                            width: 100%;
+        
+                            position: relative;
+                            &::after{
+                                position: absolute;
+                                content:"";
+                                width: 94%;
+                                height: 90%;
+                                border:solid 2px #fff;
+                                top:50%;
+                                left: 50%;
+                                transform: translate(-50%,-50%);
+                            }
+                            img{
+                                width: 100%;
+                                height: auto;
+                                display: block;
+                              }
+                        }
+        
+                    }
+                    .text{
+                        width: 100%;
+                        padding:20px 30px 20px 30px;
+                        position: relative;
+        
+                        .inside{
+                            p{
+                                padding:10px 0px 10px 0px;
+                            }
+                            img.icon{
+                                position: absolute;
+                                z-index:1;
+                                bottom:20px;
+                                right:30px;
+                                width: 150px;
+                                height: auto;
+                                opacity: 0.4;
+                            }
+
+                            .block{
+                                position: relative;
+                                z-index: 2;
+                                h3{
+                                    text-align: center;
+                                    font-size:26px;
+                                    .catch{
+                                        @include gradeText;
+                                    }
+                                }
+                                p{
+                                    color:$black34-color;
+                                    font-size:16px;
+                                    font-weight: 500;
+                                    line-height: 1.6;
+                                    
+                                }
+                            }
+                          }
+                    }
+                }		  
+            }
+            .arrow{
+                width: 5%;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &.sp-disblock{
+                    display: none;
+                }
+                .image{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                        height: auto;
+                        transform: rotate(-90deg);
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 1024px～1280px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .flow{
+        .wrapper{
+            padding: 1px 0 15px 0;
+            .inner{
+                ul {
+                    max-width: 100%;
+                    padding:0px 1.5% 0 1.5%;
+                    li {
+                        width: 30%;
+                        margin: 0 0 60px 0;
+                        .thumb{
+                            width: 100%;
+                            .semi{
+                                position: absolute;
+                                top:-15px;
+                                left: -15px;
+                                z-index:2;
+                                padding: 3px 20px 3px 20px;  
+                                font-size:1.5vw;
+                                line-height: 1.1;
+                                //border-radius: 80px;
+                                width: 7vw;
+                                height: 7vw;
+                                span.big{
+                                    font-size:2.25vw;
+                                }
+                      
+                              }
+    
+                            .cover{
+                                width: 100%;
+                                position: relative;
+                                &::after{
+                                    position: absolute;
+                                    content:"";
+                                    width: 94%;
+                                    height: 90%;
+                                    border:solid 2px #fff;
+                                    top:50%;
+                                    left: 50%;
+                                    transform: translate(-50%,-50%);
+                                }
+                                img{
+                                    width: 100%;
+                                    height: auto;
+                                    display: block;
+                                  }
+                            }
+            
+                        }
+                        .text{
+                            width: 100%;
+                            padding:20px 30px 20px 30px;
+                            position: relative;
+            
+                            .inside{
+                                p{
+                                    padding:10px 0px 10px 0px;
+                                }
+                                img.icon{
+                                    position: absolute;
+                                    z-index:1;
+                                    bottom:20px;
+                                    right:30px;
+                                    width: 150px;
+                                    height: auto;
+                                    opacity: 0.4;
+                                }
+    
+                                .block{
+                                    position: relative;
+                                    z-index: 2;
+                                    h3{
+                                        font-size:23px;
+                                    }
+                                    p{
+                                        font-size:15px;
+                                        font-weight: 500;
+                                        line-height: 1.6;
+                                
+                                    }
+                                }
+                              }
+                        }
+                    }		  
+                }
+                .arrow{
+                    width: 5%;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    &.sp-disblock{
+                        display: none;
+                    }
+                    .image{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                            height: auto;
+                            transform: rotate(-90deg);
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+} /* 1024px～1280px responsive-close
+
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 768px～1023px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .flow{
+        background: #f7f7f7;
+        .wrapper{
+            padding: 1px 0 0px 0;
+            .title{
+                position: relative;
+                z-index: 2;
+                .title-wrapper{
+                    h2{
+                        font-size:4.2vw;
+                    }
+                    .semi{
+                        letter-spacing: 2px;
+                        font-size:2.2vw;
+                    }
+                }
+            }
+            .inner{
+                margin:-40px 0 0 0;
+                ul {
+                    max-width: 100%;
+                    padding:0px 2% 0 2%;
+                    li {
+                        width: 45%;
+                        margin: 0 0 60px 0;
+                        .thumb{
+                            width: 100%;
+                            .semi{
+                                position: absolute;
+                                top:-15px;
+                                left: -15px;
+                                z-index:2;
+                                padding: 3px 20px 3px 20px;  
+                                font-size:1.5vw;
+                                line-height: 1.1;
+                                //border-radius: 80px;
+                                width: 7vw;
+                                height: 7vw;
+                                span.big{
+                                    font-size:2.25vw;
+                                }
+                      
+                              }
+    
+                            .cover{
+                                width: 100%;
+                                position: relative;
+                                &::after{
+                                    position: absolute;
+                                    content:"";
+                                    width: 94%;
+                                    height: 90%;
+                                    border:solid 2px #fff;
+                                    top:50%;
+                                    left: 50%;
+                                    transform: translate(-50%,-50%);
+                                }
+                                img{
+                                    width: 100%;
+                                    height: auto;
+                                    display: block;
+                                  }
+                            }
+            
+                        }
+                        .text{
+                            width: 100%;
+                            padding:20px 30px 20px 30px;
+                            position: relative;
+            
+                            .inside{
+                                p{
+                                    padding:10px 0px 10px 0px;
+                                }
+                                img.icon{
+                                    position: absolute;
+                                    z-index:1;
+                                    bottom:20px;
+                                    right:30px;
+                                    width: 150px;
+                                    height: auto;
+                                    opacity: 0.4;
+                                }
+    
+                                .block{
+                                    position: relative;
+                                    z-index: 2;
+                                    h3{
+                                        font-size:23px;
+                                        font-weight: 700;
+                                    }
+                                    p{
+                                        font-size:15px;
+                                        font-weight: 500;
+                                        line-height: 1.6;
+                                
+                                    }
+                                }
+                              }
+                        }
+                    }		  
+                }
+                .arrow{
+                    width: 5%;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    &.sp-disblock{
+                        display: flex;
+                    }
+                    .image{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                            height: auto;
+                            transform: rotate(-90deg);
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+} /* 768px～1023px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+
+/**********************************************************************************
+ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+◆	Stylesheet: 767pxまで(スマホ)のモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+    .flow{
+        .wrapper{
+            padding: 1px 0 50px 0;
+            .title{
+                position: relative;
+                z-index: 2;
+                .title-wrapper{
+                    h2{
+                        letter-spacing: 2px;
+                        font-size:9vw;
+                    }
+                    .semi{
+                        letter-spacing: 2px;
+                        font-size:4.5vw;
+                    }
+                }
+            }
+            .inner{
+                margin:-40px 0 0 0;
+                position: relative;
+                z-index: 2;
+                ul {
+                    margin: 0 auto;
+                    padding:0px 4% 0 4%;
+                    display: block;
+                    li {
+                        width: 100%;
+                        margin: 0 auto 20px;
+                        background: #fff;
+                        padding: 0 0 10px 0;
+                        display: block;
+                        .thumb{
+                            width: 100%;
+                            padding: 30px 30px 0px 30px;
+                            .cover{
+                                width: 100%;
+                                position: relative;
+                                &::after{
+                                    position: absolute;
+                                    content:"";
+                                    width: 94%;
+                                    height: 90%;
+                                    top:50%;
+                                    left: 50%;
+                                    transform: translate(-50%,-50%);
+                                }
+                                img{
+                                    width: 100%;
+                                    height: auto;
+                                    display: block;
+                                  }
+                            }
+            
+                        }
+                        .text{
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-self: start;
+                            color: $main-color;
+                            padding:10px 30px 10px 30px;
+                            position: relative;
+            
+                            .inside{
+                                margin: 10px 0 0 0;
+                                p{
+                                    padding:10px 0px 10px 0px;
+                                }
+                                img.icon{
+                                    position: absolute;
+                                    z-index:1;
+                                    bottom:20px;
+                                    right:30px;
+                                    width: 150px;
+                                    height: auto;
+                                    opacity: 0.4;
+                                }
+                                .semi{
+                                    position: absolute;
+                                    top:-70px;
+                                    left: 60px;
+                                    z-index:2;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    width: 10%;
+                                    color:#fff;
+                                    padding: 3px 20px 3px 20px;  
+                                    font-size:17px;
+                                    line-height: 1.1;
+                                    //border-radius: 80px;
+                                    width: 80px;
+                                    height: 80px;
+                                    span.big{
+                                    font-size:25px;
+                                    }
+                          
+                                  }
+                                .block{
+                                    position: relative;
+                                    z-index: 2;
+                                    h3{
+                                        font-size:6.5vw;
+                                        font-weight: 700;
+                                    }
+                                    p{
+                                        font-size:3.75vw;
+                                        line-height: 1.86;
+                                        padding: 6px 0 6px 0;
+                                        color:$dark-color;
+                                    }
+                                }
+                              }
+                        }
+                    }
+                    .arrow{
+                        width: 30%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 5px auto 5px;
+                        &.sp-disblock{
+                            display: block;
+                        }
+                        .image{
+                            width: 100%;
+                            img{
+                                width: 100%;
+                                height: auto;
+                                transform: rotate(0deg);
+                            }
+                        }
+                    }		  
+                }
+
+            }
+    
+        }
+    }
+} /* 767px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □   
+
+◆	Stylesheet: さらに刻んで320pxまでのモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+
+@media screen and (max-width: 320px) {
+
+} /* 320px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+

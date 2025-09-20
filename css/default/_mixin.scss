@@ -1,0 +1,158 @@
+@mixin animation(
+	$name,
+	$duration: 1s,
+	$timing-function: ease,
+	$delay: 0s,
+	$iteration-count: 1,
+	$direction: normal,
+	$fill-mode: forwards
+) {
+  animation: {
+    name: $name;
+    duration: $duration;
+    timing-function: $timing-function;
+    delay: $delay;
+    iteration-count: $iteration-count;
+    direction: $direction;
+    fill-mode: $fill-mode;
+  }
+}
+
+@mixin p-base($which: before, $top: 0, $left: 0, $content: "", $position: absolute, $width: 100%, $height: 100%, $display: block) {
+  &::#{$which} {
+    display: $display;
+    content: $content;
+    position: $position;
+    top: $top;
+    left: $left;
+    width: $width;
+    height: $height;
+    @content;
+  }
+}
+
+@mixin flexBase($aligin-item:center, $justify-content: center){
+	display: flex;
+	align-items: $aligin-item;
+  	justify-content:$justify-content;
+}
+
+@mixin flexSpaceBetween($aligin-item:center){
+	display: flex;
+	align-items: $aligin-item;
+	justify-content: space-between;
+}
+
+@mixin positionCenter{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin positionBeforeAfter(){
+	position: absolute;
+	content:"";
+}
+
+@mixin BeforeAfterFull($width:100%,$height:100%){
+	content:"";
+	position: absolute;
+	top:0;
+	left:0;
+	width: $width;
+	height: $height;
+}
+
+@mixin BeforeAfterLine($height:1px){
+	content:"";
+	position: absolute;
+	left:0;
+	width: 100%;
+	height: $height;
+}
+
+@mixin BeforeTriangle($width:36px,$height:30px,$color:#e6b24f,$left:0,$top:0){
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: $height $width 0 0;
+	left: $left;
+	top: $top;
+	border-color: $color transparent transparent transparent;
+}
+
+
+@mixin gradeBorder($width:12px,$border-width:2px,$color01:#4081cb,$color02:#a4c0ea,$color03:#48c1b5){
+    content: "";
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-width: $border-width;
+    border-style: solid;
+    width: calc(100% - $width);
+    height: calc(100% - $width);
+    -o-border-image: linear-gradient(90deg, $color01 0%, $color02 45%, $color03 70%, $color02 85%, $color01 90% 100%);
+    border-image: linear-gradient(90deg, $color01 0%, $color02 45%, $color03 70%, $color02 85%, $color01 90% 100%);
+    border-image-slice: 1;
+    opacity: 0.9;
+}
+
+
+
+
+@mixin gradeText($angle:45deg,$color01:#11baa9,$color02:#3b5bec){
+	display: inline-block;
+	background: linear-gradient($angle, $color01 0%, $color02 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@mixin gradeText02($angle:45deg,$color01:#0b8593,$color02:#1345ce){
+	display: inline-block;
+	background: linear-gradient($angle, $color01 0%, $color02 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+@mixin gradeText03($angle:45deg,$color01:#fd5e75,$color02:#fe960a){
+	display: inline-block;
+	background: linear-gradient($angle, $color01 0%, $color02 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@mixin gradeGoldText01{
+	display: inline-block;
+	background: $gold-grade-color01;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@mixin iconBase($width:40px){
+	line-height: 0;
+	width: $width;
+	img{
+		width: 100%;
+		height:auto;
+	}
+}
+
+@mixin imgBase($width:100%){
+	line-height: 0;
+	width: $width;
+	img{
+		width: 100%;
+		height:auto;
+	}
+}
+

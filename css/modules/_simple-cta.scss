@@ -1,0 +1,708 @@
+@charset "utf-8";
+/*===================================================================================================
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+〇 SIMPLE-CTA 〇
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+====================================================================================================*/
+
+.simple-cta{
+    overflow: hidden;
+    position: relative;
+    padding: 30px 2% 30px 2%;
+    background: $grade-color;
+    .illust{
+        position: absolute;
+        &.left{
+            left:-10px;
+            top:50%;
+            transform: translate(0,-50%);
+            width: 250px;
+        }
+        &.right{
+            right:-10px;
+            bottom:0;
+            width: 300px;
+        }
+    }
+    .wrapper{
+        padding: 70px 0 70px 0;
+        margin: 0 auto 0;
+        position: relative;
+        .title{
+            h3{
+                text-align: center;
+                .catch{
+                    color:#fff;
+                    font-size: 18px;
+                }
+            }
+            h2{
+                text-align: center;
+                .catch{
+                    color: #fff;
+                    letter-spacing: 2px;
+                    font-size:32px;
+                    .color{
+                        @include gradeText
+                    }
+                }
+             }
+        }
+        .block{
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+            margin: 0px auto 0;
+            padding: 40px 0 0 0;
+            max-width: 1280px;
+            .button{
+                width: 48%;
+                font-weight: 700;
+                border-radius: 100px;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    padding: 5px 0 20px 0;
+                    .top{
+                        text-align: center;
+                        margin: -10px 0 0 0;
+                        .catch{
+                            padding: 5px 25px 5px 25px;
+                            position: relative;
+
+                            border-radius: 50px;
+                            text-align: center;
+                            display: inline-block;
+                            background: #fff;
+                            margin: 0px 0 0 0;
+                            
+                            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                            &:after {
+                                content: "";
+                                position: absolute;
+                                z-index: 1;
+                                top:5px;
+                                left: 50%;
+                                transform: translate(-50%,0);
+                                border: 25px solid transparent;
+                                border-top: 40px solid #fff;
+                            }
+                            p{
+                                position: relative;
+                                z-index: 3;
+                                font-size:18px;
+                                line-height: 1.65;
+                                letter-spacing: 1px;
+                                .small{
+                                    font-size:0.8em;
+                                }
+                            }
+                        }
+                    }
+                    .bottom{
+                        margin: 4px 0 0 0;
+                        padding: 0px 50px 15px 50px;
+                    }
+                }
+                &.consul{
+                    background: $add-grade-color;
+                    border-bottom:solid 8px #dc350c;
+                    color:$orange-color;
+                    a{
+                        .top{
+                            .catch{
+                                p{
+                                    color:$orange-color;                               
+                                }
+                            }
+                        }
+                        .bottom{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            .icon{
+                                line-height: 0;
+                                width: 50px;
+                                img{
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                            .catch{
+                                padding: 0 0px 0 0px;
+                                
+                                font-size:28px;
+                            }
+                            .arrow{
+                                line-height: 0;
+                                width: 40px;
+                                img{
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.apply{
+                    background: linear-gradient(
+                        90deg,
+                        rgb(1, 150, 13) 0%,
+                        rgb(182, 232, 0) 100%
+                      );
+                    border-bottom:solid 8px #0a7304;
+                    a{
+                        .top{
+                            .catch{
+                                p{
+                                    color:$orange-color;
+                                    color:rgb(1, 150, 13);                                  
+                                }
+                            }
+                        }
+                        .bottom{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            .icon{
+                                line-height: 0;
+                                width: 50px;
+                                img{
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                            .catch{
+                                padding: 0 0px 0 0px;
+                                font-size:28px;
+                            }
+                            .arrow{
+                                line-height: 0;
+                                width: 40px;
+                                img{
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }    
+                }
+            }
+        }
+    }
+}
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 1024px～1280px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .simple-cta{
+        padding: 30px 1% 30px 1%;
+        .illust{
+            &.left{
+                left:-10px;
+                top:50%;
+                transform: translate(0,-50%);
+                width: 200px;
+            }
+            &.right{
+                right:-10px;
+                bottom:0;
+                width: 250px;
+            }
+        }
+        .wrapper{
+            padding: 70px 20px 70px 20px;
+            &::before{
+                @include gradeBorder(0px,5px)
+            }
+            .title{
+                h3{
+                    .mark{
+                        margin: 0 10px 0 0;
+                        .cover{
+                            padding: 2px 15px 2px 15px;
+                            font-size:20px;
+                            .small{
+                                font-size:0.75em;
+                            }
+                        }
+                    }
+                    .semi{
+                        font-size: 18px;
+                    }
+    
+                }
+                h2{
+                    margin: 10px 0 0 0;
+                    .icon{
+                        line-height: 0;
+                        width: 50px;
+                        margin: 0 20px 0 0;
+                    }
+                    .catch{
+                        letter-spacing: 2px;
+                        font-size:35px;
+                    }
+                 }
+            }
+            .block{
+                margin: 0px auto 0;
+                padding: 40px 2% 0 2%;
+                max-width: 1280px;
+                .button{
+                    width: 49%;
+                    border-radius: 100px;
+                    a{
+                        padding: 5px 0 20px 0;
+                        .top{
+                            margin: -10px 0 0 0;
+                            .catch{
+                                padding: 5px 25px 5px 25px;
+                                border-radius: 50px;
+                                &:after {
+                                    top:5px;
+                                    left: 50%;
+                                    border: 25px solid transparent;
+                                    border-top: 40px solid #fff;
+                                }
+                                p{
+                                    font-size:17px;
+                                    line-height: 1.65;
+                                    letter-spacing: 1px;
+                                    .small{
+                                        font-size:0.8em;
+                                    }
+                                }
+                            }
+                        }
+                        .bottom{
+                            margin: 4px 0 0 0;
+                            padding: 0px 50px 15px 50px;
+                        }
+                    }
+                    &.consul{
+                        a{
+                            .top{
+                                .catch{
+                                    p{
+                                        color:$orange-color;                               
+                                    }
+                                }
+                            }
+                            .bottom{
+                                .icon{
+                                    line-height: 0;
+                                    width: 35px;
+                                    img{
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                                .catch{
+                                    padding: 0 0px 0 0px;
+                                    
+                                    font-size:23px;
+                                }
+                                .arrow{
+                                    width: 25px;
+                                    img{
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.apply{
+                        a{
+                            .bottom{
+                                .icon{
+                                    line-height: 0;
+                                    width: 35px;
+                                    img{
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                                .catch{
+                                    padding: 0 0px 0 0px;
+                                    font-size:22px;
+                                }
+                                .arrow{
+                                    line-height: 0;
+                                    width: 25px;
+                                    img{
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                            }
+                        }    
+                    }
+                }
+            }
+        }
+    }
+} /* 1024px～1280px responsive-close
+
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 768px～1023px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .simple-cta{
+        padding: 30px 1% 30px 1%;
+        .illust{
+            &.left{
+                left:-10px;
+                top:5%;
+                transform: translate(0,0%);
+                width: 190px;
+            }
+            &.right{
+                right:-10px;
+                bottom:0;
+                width: 190px;
+            }
+        }
+        .wrapper{
+            padding: 70px 0px 70px 0px;
+            &::before{
+                @include gradeBorder(10px,5px)
+            }
+            .title{
+                h3{
+                    .mark{
+                        margin: 0 10px 0 0;
+                        .cover{
+                            padding: 2px 15px 2px 15px;
+                            font-size:20px;
+                            .small{
+                                font-size:0.75em;
+                            }
+                        }
+                    }
+                    .semi{
+                        font-size: 18px;
+                    }
+    
+                }
+                h2{
+                    margin: 10px 0 0 0;
+                    .icon{
+                        line-height: 0;
+                        width: 50px;
+                        margin: 0 20px 0 0;
+                    }
+                    .catch{
+                        letter-spacing: 2px;
+                        font-size:36px;
+                    }
+                 }
+            }
+            .block{
+                margin: 0px auto 0;
+                padding: 40px 2% 0 2%;
+                max-width: 1280px;
+                .button{
+                    width: 49%;
+                    border-radius: 100px;
+                    a{
+                        padding: 5px 0 20px 0;
+                        .top{
+                            margin: -10px 0 0 0;
+                            .catch{
+                                padding: 5px 20px 5px 20px;
+                                border-radius: 50px;
+                                &:after {
+                                    top:5px;
+                                    left: 50%;
+                                    border: 25px solid transparent;
+                                    border-top: 40px solid #fff;
+                                }
+                                p{
+                                    font-size:15px;
+                                    line-height: 1.65;
+                                    letter-spacing: 1px;
+                                    .small{
+                                        font-size:0.8em;
+                                    }
+                                }
+                            }
+                        }
+                        .bottom{
+                            margin: 4px 0 0 0;
+                            padding: 0px 25px 15px 25px;
+                        }
+                    }
+                    &.consul{
+                        a{
+                            .top{
+                                .catch{
+                                    p{
+                                        color:$orange-color;                               
+                                    }
+                                }
+                            }
+                            .bottom{
+                                .icon{
+                                    line-height: 0;
+                                    width: 35px;
+                                    img{
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                                .catch{
+                                    padding: 0 0px 0 0px;
+                                    
+                                    font-size:22px;
+                                }
+                                .arrow{
+                                    width: 25px;
+                                    img{
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.apply{
+                        a{
+                            .bottom{
+                                .icon{
+                                    line-height: 0;
+                                    width: 35px;
+                                    img{
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                                .catch{
+                                    padding: 0 0px 0 0px;
+                                    font-size:22px;
+                                }
+                                .arrow{
+                                    line-height: 0;
+                                    width: 25px;
+                                    img{
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                            }
+                        }    
+                    }
+                }
+            }
+        }
+    }
+} /* 768px～1023px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+
+/**********************************************************************************
+ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+◆	Stylesheet: 767pxまで(スマホ)のモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+    .simple-cta{
+        padding: 30px 2% 30px 2%;
+        .illust{
+            &.left{
+                left:-10px;
+                top:5%;
+                transform: translate(0,0%);
+                width: 22vw;
+            }
+            &.right{
+                right:-10px;
+                bottom:0;
+                width: 22vw;
+            }
+        }
+        .wrapper{
+            padding: 20px 0 30px 0;
+            &::before{
+                @include gradeBorder(0px,4px)
+            }
+            .title{
+                h3{
+                    display: block;
+                    text-align: center;
+                    .mark{
+                        margin: 10px 0px 0 0;
+                        .cover{
+                            padding: 2px 15px 2px 15px;
+                            font-size:4vw;
+                            .small{
+                                font-size:0.75em;
+                            }
+                        }
+                    }
+                    .semi{
+                        font-size: 18px;
+                        margin: 10px;
+                    }
+    
+                }
+                h2{
+                    margin: 10px 0 0 0;
+                    padding: 0 3% 0 3%;
+                    .icon{
+                        line-height: 0;
+                        width: 10vw;
+                        margin: 0 10px 0 0;
+                    }
+                    .catch{
+                        letter-spacing: 2px;
+                        font-size:7.77vw;
+
+                    }
+                 }
+            }
+            .block{
+                margin: 0px auto 0;
+                padding: 40px 3% 0 3%;
+                max-width: 100%;
+                display: block;
+                .button{
+                    width: 100%;
+                    border-radius: 100px;
+                    a{
+                        padding: 5px 0 0px 0;
+                        display: block;
+                        .top{
+                            margin: -15px 0 0 0;
+                            padding: 1px 0 0 0;
+                            .catch{
+                                padding: 5px 20px 5px 20px;
+                                border-radius: 50px;
+                                margin: 0px 0 0 0;
+                                &:after {
+                                    top:5px;
+                                    left: 50%;
+                                    border: 25px solid transparent;
+                                    border-top: 40px solid #fff;
+                                }
+                                p{
+                                    font-size:3.85vw;
+                                    line-height: 1.65;
+                                    letter-spacing: 1px;
+                                    .small{
+                                        font-size:0.8em;
+                                    }
+                                }
+                            }
+                        }
+                        .bottom{
+                            margin: 4px 0 0 0;
+                            padding: 5px 25px 15px 25px;
+                        }
+                    }
+                    &.consul{
+                        a{
+                            .top{
+                                .catch{
+                                    p{
+                                        color:$orange-color;                               
+                                    }
+                                }
+                            }
+                            .bottom{
+                                .icon{
+                                    line-height: 0;
+                                    width: 7vw;
+                                    img{
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                                .catch{
+                                    padding: 0 0px 0 0px;
+                                    
+                                    font-size:5.5vw;
+                                }
+                                .arrow{
+                                    width: 5vw;
+                                    img{
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.apply{
+                        margin: 30px 0 0 0;
+                        a{
+                            .bottom{
+                                .icon{
+                                    line-height: 0;
+                                    width: 7vw;
+                                    img{
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                                .catch{
+                                    padding: 0 0px 0 0px;
+                                    font-size:5.5vw;
+                                }
+                                .arrow{
+                                    line-height: 0;
+                                    width: 5vw;
+                                    img{
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                            }
+                        }    
+                    }
+                }
+            }
+        }
+    }
+} /* 767px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □   
+
+◆	Stylesheet: さらに刻んで320pxまでのモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+
+@media screen and (max-width: 320px) {
+
+} /* 320px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+

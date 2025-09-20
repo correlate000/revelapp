@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/*============================================
+	― 変数設定
+=============================================*/
+
+
+
+$main-color: #3b6bec ;
+$light-color:#dbe7ff;
+$sub-color: #0d2c83 ;
+$grade-color: linear-gradient(90deg,#3464e6 0%,#2898a4 100%);
+$grade-color02: linear-gradient(90deg,#1345ce 0%,#0b8593 100%);
+$grade-slight-color: linear-gradient(90deg,#ffebed 0%,#fff1ed 100%);
+$dark-color: #0d1b42 ;
+$overlay-color: #eff6ff;
+$black-color: #000000;
+$white-color: #ffffff;
+$add-color:#e88300;
+$add-grade-color:linear-gradient(
+  90deg,
+  rgba(238,118,0, 1) 0%,
+  rgba(232, 153,0, 1) 100%
+);
+
+$navy-color:#0b0b4f;
+
+$box-shadow-plane: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+$box-shadow-main: rgba(185, 200, 216, 0.2) 0px 7px 29px 0px;
+$gold-color:#e6b24f;
+$gold-grade-color01:linear-gradient(90deg, rgba(202,141,47,1) 0%, rgba(252,238,155,1) 47%, rgba(202,141,47,1) 100%);
+$gold-grade-color02:linear-gradient(90deg, rgb(199, 134, 35) 0%, rgb(225, 201, 64) 47%, rgb(182, 117, 21) 100%);
+$navy-grade-color01:linear-gradient(90deg, rgba(0,43,109,1) 0%, rgba(0,72,138,1) 47%, rgba(0,47,113,1) 100%);
+$navy-grade-color02:linear-gradient(90deg, rgba(3, 28, 64,1) 0%, rgba(4, 47, 88,1) 47%, rgba(4, 32, 70,1) 100%);
+
+$add-grade-color:linear-gradient(90deg,#f76002 0%,#ffb300 100%);
+$yellow-color: #fef33b;
+$orange-color: #e86103;
+
+$black34-color:#343434;

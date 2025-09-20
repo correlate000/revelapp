@@ -1,0 +1,683 @@
+@charset "utf-8";
+/*===================================================================================================
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+〇 PERSON 〇
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+====================================================================================================*/
+
+.preson{
+    overflow: hidden;
+    .container{
+        padding: 1px 0 40px 0;
+        background-color:hsla(0,0%,100%,1);
+        background-image:
+        radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%),
+        radial-gradient(at 80% 50%, hsla(0,100%,97%,1) 0px, transparent 50%),
+        radial-gradient(at 80% 100%, hsla(355,100%,96%,1) 0px, transparent 50%),
+        radial-gradient(at 0% 0%, hsla(340,100%,96%,1) 0px, transparent 50%);
+        background-size: cover;
+        .content-basic{
+            margin: -40px 0 0 0;
+            position: relative;
+            z-index: 3;
+            .splide{
+                max-width: 1680px;
+                padding: 0px 2% 20px 2%;
+                margin: 0 auto 0;
+                .splide-wrapper{
+                    .splide__track{
+                        .splide__list{
+                            .splide__slide{
+                                position: relative;
+                                @include flexBase(center,center);
+                                background: #fff;
+                                box-shadow: $box-shadow-main;
+                                &::before{
+                                    @include gradeBorder(10px,3px);
+                                }
+                                cursor: pointer;
+                                .inner{
+                                    position: relative;
+                                    padding: 40px 30px 30px 30px;
+                                    .number{
+                                        position: absolute;
+                                        left:0px;
+                                        top:0px;
+                                        p{
+                                            display: inline-block;
+                                            background: $grade-color;
+                                            box-shadow: $box-shadow-plane;
+                                            color:#fff;
+                                            padding: 5px 25px 5px 25px;
+                                            font-weight: 600;
+                                            font-size: 15px;
+                                            
+                                        }
+                                    }
+                                    .profile{
+                                        
+                                        @include flexBase(center,center);
+                                        .thumb{
+                                            width: 40%;
+                                            overflow: hidden;
+                                            position: relative;
+                                            mask-image: url("../images/mask02.svg");/*マスクレイヤーとして使用する画像*/
+                                            mask-repeat: no-repeat;
+                                            mask-position: 0 0;
+                                            mask-size: 100% auto;
+                                            -webkit-mask-image: url("../images/mask02.svg");
+                                            -webkit-mask-repeat: no-repeat;
+                                            -webkit-mask-position: 0 0;
+                                            -webkit-mask-size: 100% auto;
+                                        }
+                                        .detail{
+                                            padding: 0 0 0 30px;
+                                            
+                                            h3{
+                                                line-height: 1.2;
+                                                .catch{
+                                                    color: $main-color;
+                                                    font-size: 22px;
+                                                    .small{
+                                                        font-size:0.7em;
+                                                        color:$black34-color;
+                                                    }
+                                                }
+                                            }
+                                            .age{
+                                                margin: 10px 0 0 0;
+                                                font-weight: 600;
+                                                p{
+                                                    position: relative;
+                                                    @include gradeText;
+                                                    display: inline-block;
+                                                    letter-spacing: 3px;
+                                                    font-size: 36px;
+                                                    &:before {
+                                                        content: "";
+                                                        position: absolute;
+                                                        left: 0;
+                                                        bottom: 5px;
+                                                        width: 100%;
+                                                        height: 6px;
+                                                        background: repeating-linear-gradient(-45deg, transparent, transparent 2px, $main-color 2px, $main-color 4px);
+                                                        opacity: 0.6;
+                                                    }
+                                                    .en{
+                                                        font-family: 'Antonio';
+                                                    }
+                                                }
+                                            }
+                                            .pre-job{
+                                                margin: 15px 0 0 0;
+                                                font-weight: 600;
+                                                dt{
+                                                    p{
+                                                        background:$grade-color;
+                                                        box-shadow: $box-shadow-plane;
+                                                        display: inline-block;
+                                                        color: #fff;
+                                                        padding: 2px 30px 2px 30px;
+                                                        font-size: 16px;
+                                                    }
+                                                }
+                                                dd{
+                                                    margin: 5px 0 0 0;
+                                                    p{
+                                                        display: inline-block;
+                                                        color:$black34-color;
+                                                        font-size: 18px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .sentence{
+                                        margin: 20px 0 0 0;
+                                        p{
+                                            padding: 10px 10px 10px 10px;
+                                            color:$black34-color;
+                                            line-height: 1.65;
+                                            font-size: 16px;
+                                        }
+                                    }
+                                }
+                                &.is-active{
+                                    position: relative;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .explain{
+            margin: 0px 0 0 0;
+            position: relative;
+            @include flexBase(center,center);
+            flex-direction: row-reverse;
+            margin: 50px auto 0;
+            padding: 0px 0 0px 0;
+
+            .thumb{
+                position: relative;
+                z-index: 2;
+                line-height: 0;
+                width: 480px;
+                position: relative;
+                
+                border-radius: 0 100px 0 100px;
+                &::before{
+                    content:"";
+                    width: 96%;
+                    height: 96%;
+                    border:solid 3px $main-color;
+                    position: absolute;
+                    top:50%;
+                    left:50%;
+                    transform: translate(-50%,-50%);
+                    border-radius: 0 100px 0 100px;
+                }
+                img{
+                    border-radius: 0 100px 0 100px;
+                }
+            }
+            .text{
+                position: relative;
+                z-index: 1;
+                margin: 0 0 0 0;
+                padding: 0 20px 0 0px;
+                .sub{
+                    text-align: center;
+                    p{
+                        display: inline-block;
+                        background: #fff;
+                        box-shadow: $box-shadow-main;
+                        color:$main-color;
+                        border:solid 3px $main-color;
+                        padding: 5px 20px 5px 20px;
+                        font-weight: 500;
+                        font-size: 18px;
+                    }
+                }
+                .main{
+                    margin: 10px 0 0 0;
+                    p{
+                        @include gradeText;
+                        font-weight: 700;
+                        line-height: 1.35;
+                        font-size: 32px;
+                        .small{
+                            font-size: 0.7em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 1024px～1280px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .preson{
+        .container{
+            padding: 1px 0 40px 0;
+            .content-basic{
+                margin: -40px 0 0 0;
+                .splide{
+                    max-width: 1680px;
+                    padding: 0px 2% 20px 2%;
+                    margin: 0 auto 0;
+                    .splide-wrapper{
+                        .splide__track{
+                            .splide__list{
+                                .splide__slide{
+                                    &::before{
+                                        @include gradeBorder(10px,3px);
+                                    }
+                                    .inner{
+                                        padding: 40px 30px 30px 30px;
+                                        .number{
+                                            p{
+                                                padding: 5px 25px 5px 25px;
+                                                font-size: 15px;
+                                                
+                                            }
+                                        }
+                                        .profile{
+                                            
+                                            @include flexBase(center,center);
+                                            .thumb{
+                                                width: 40%;
+                                            }
+                                            .detail{
+                                                padding: 0 0 0 30px;
+                                                
+                                                h3{
+                                                    line-height: 1.2;
+                                                    .catch{
+                                                        font-size: 22px;
+                                                        .small{
+                                                            font-size:0.7em;
+                                                        }
+                                                    }
+                                                }
+                                                .age{
+                                                    margin: 10px 0 0 0;
+                                                    p{
+                                                        letter-spacing: 3px;
+                                                        font-size: 36px;
+                                                        &:before {
+                                                            bottom: 5px;
+                                                            width: 100%;
+                                                            height: 6px;
+                                                            background: repeating-linear-gradient(-45deg, transparent, transparent 2px, $main-color 2px, $main-color 4px);
+                                                            opacity: 0.6;
+                                                        }
+                                                    }
+                                                }
+                                                .pre-job{
+                                                    margin: 15px 0 0 0;
+                                                    dt{
+                                                        p{
+                                                            padding: 2px 30px 2px 30px;
+                                                            font-size: 16px;
+                                                        }
+                                                    }
+                                                    dd{
+                                                        margin: 5px 0 0 0;
+                                                        p{
+                                                            font-size: 18px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .sentence{
+                                            margin: 20px 0 0 0;
+                                            p{
+                                                padding: 10px 10px 10px 10px;
+                                                line-height: 1.65;
+                                                font-size: 16px;
+                                            }
+                                        }
+                                    }
+                                    &.is-active{
+                                        position: relative;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .explain{
+                margin: 50px auto 0;
+                padding: 0px 0 0px 0;
+    
+                .thumb{
+                    width: 400px;
+                    position: relative;
+                    
+                    border-radius: 0 100px 0 100px;
+                    &::before{
+                        content:"";
+                        width: 96%;
+                        height: 96%;
+                        top:50%;
+                        left:50%;
+                        transform: translate(-50%,-50%);
+                        border-radius: 0 100px 0 100px;
+                    }
+                    img{
+                        border-radius: 0 100px 0 100px;
+                    }
+                }
+                .text{
+                    padding: 0 20px 0 0px;
+                    .sub{
+                        p{
+                            padding: 5px 20px 5px 20px;
+                            font-size: 17px;
+                        }
+                    }
+                    .main{
+                        margin: 10px 0 0 0;
+                        p{
+                            line-height: 1.35;
+                            font-size: 28px;
+                            .small{
+                                font-size: 0.7em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+} /* 1024px～1280px responsive-close
+
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 768px～1023px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .preson{
+        .container{
+            padding: 1px 0 40px 0;
+            .content-basic{
+                margin: -40px 0 0 0;
+                .splide{
+                    max-width: 1680px;
+                    padding: 0px 2% 20px 2%;
+                    margin: 0 auto 0;
+                    .splide-wrapper{
+                        .splide__track{
+                            .splide__list{
+                                .splide__slide{
+                                    &::before{
+                                        @include gradeBorder(10px,3px);
+                                    }
+                                    .inner{
+                                        padding: 40px 30px 30px 30px;
+                                        .number{
+                                            p{
+                                                padding: 5px 25px 5px 25px;
+                                                font-size: 15px;
+                                                
+                                            }
+                                        }
+                                        .profile{
+                                            
+                                            @include flexBase(center,center);
+                                            .thumb{
+                                                width: 40%;
+                                            }
+                                            .detail{
+                                                padding: 0 0 0 30px;
+                                                
+                                                h3{
+                                                    line-height: 1.2;
+                                                    .catch{
+                                                        font-size: 22px;
+                                                        .small{
+                                                            font-size:0.7em;
+                                                        }
+                                                    }
+                                                }
+                                                .age{
+                                                    margin: 10px 0 0 0;
+                                                    p{
+                                                        letter-spacing: 3px;
+                                                        font-size: 36px;
+                                                        &:before {
+                                                            bottom: 5px;
+                                                            width: 100%;
+                                                            height: 6px;
+                                                            background: repeating-linear-gradient(-45deg, transparent, transparent 2px, $main-color 2px, $main-color 4px);
+                                                            opacity: 0.6;
+                                                        }
+                                                    }
+                                                }
+                                                .pre-job{
+                                                    margin: 15px 0 0 0;
+                                                    dt{
+                                                        p{
+                                                            padding: 2px 30px 2px 30px;
+                                                            font-size: 16px;
+                                                        }
+                                                    }
+                                                    dd{
+                                                        margin: 5px 0 0 0;
+                                                        p{
+                                                            font-size: 18px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .sentence{
+                                            margin: 20px 0 0 0;
+                                            p{
+                                                padding: 10px 10px 10px 10px;
+                                                line-height: 1.65;
+                                                font-size: 16px;
+                                            }
+                                        }
+                                    }
+                                    &.is-active{
+                                        position: relative;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .explain{
+                margin: 50px auto 0;
+                padding: 0px 0 0px 0;
+    
+                .thumb{
+                    width: 45%;
+                    position: relative;
+                    
+                    border-radius: 0 100px 0 100px;
+                    &::before{
+                        content:"";
+                        width: 96%;
+                        height: 96%;
+                        top:50%;
+                        left:50%;
+                        transform: translate(-50%,-50%);
+                        border-radius: 0 100px 0 100px;
+                    }
+                    img{
+                        border-radius: 0 100px 0 100px;
+                    }
+                }
+                .text{
+                    padding: 0 20px 0 0px;
+                    .sub{
+                        p{
+                            padding: 5px 20px 5px 20px;
+                            font-size: 17px;
+                        }
+                    }
+                    .main{
+                        margin: 10px 0 0 0;
+                        p{
+                            line-height: 1.35;
+                            font-size: 28px;
+                            .small{
+                                font-size: 0.7em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+} /* 768px～1023px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+
+/**********************************************************************************
+ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+◆	Stylesheet: 767pxまで(スマホ)のモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+    .preson{
+        .container{
+            padding: 1px 0 40px 0;
+            .content-basic{
+                margin: -40px 0 0 0;
+                .splide{
+                    max-width: 1680px;
+                    padding: 0px 2% 20px 2%;
+                    margin: 0 auto 0;
+                    .splide-wrapper{
+                        .splide__track{
+                            .splide__list{
+                                .splide__slide{
+                                    &::before{
+                                        @include gradeBorder(10px,3px);
+                                    }
+                                    .inner{
+                                        padding: 40px 30px 30px 30px;
+                                        .number{
+                                            p{
+                                                padding: 5px 25px 5px 25px;
+                                                font-size: 15px;
+                                                
+                                            }
+                                        }
+                                        .profile{
+                                            
+                                            @include flexBase(center,center);
+                                            .thumb{
+                                                width: 40%;
+                                            }
+                                            .detail{
+                                                padding: 0 0 0 30px;
+                                                
+                                                h3{
+                                                    line-height: 1.2;
+                                                    .catch{
+                                                        font-size: 22px;
+                                                        .small{
+                                                            font-size:0.7em;
+                                                        }
+                                                    }
+                                                }
+                                                .age{
+                                                    margin: 10px 0 0 0;
+                                                    p{
+                                                        letter-spacing: 3px;
+                                                        font-size: 36px;
+                                                        &:before {
+                                                            bottom: 5px;
+                                                            width: 100%;
+                                                            height: 6px;
+                                                            background: repeating-linear-gradient(-45deg, transparent, transparent 2px, $main-color 2px, $main-color 4px);
+                                                            opacity: 0.6;
+                                                        }
+                                                    }
+                                                }
+                                                .pre-job{
+                                                    margin: 15px 0 0 0;
+                                                    dt{
+                                                        p{
+                                                            padding: 2px 30px 2px 30px;
+                                                            font-size: 16px;
+                                                        }
+                                                    }
+                                                    dd{
+                                                        margin: 5px 0 0 0;
+                                                        p{
+                                                            font-size: 18px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .sentence{
+                                            margin: 20px 0 0 0;
+                                            p{
+                                                padding: 10px 10px 10px 10px;
+                                                line-height: 1.65;
+                                                font-size: 16px;
+                                            }
+                                        }
+                                    }
+                                    &.is-active{
+                                        position: relative;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .explain{
+                margin: 50px auto 0;
+                padding: 0px 0 0px 0;
+                display: block;
+                .thumb{
+                    width: 90%;
+                    position: relative;
+                    z-index: 1;                    
+                    border-radius: 0 100px 0 100px;
+                    margin: 0 auto 0;
+                    &::before{
+                        content:"";
+                        width: 96%;
+                        height: 96%;
+                        top:50%;
+                        left:50%;
+                        transform: translate(-50%,-50%);
+                        border-radius: 0 100px 0 100px;
+                    }
+                    img{
+                        border-radius: 0 100px 0 100px;
+                    }
+                }
+                .text{
+                    padding: 0 0px 0 0px;
+                    margin: -20px 0 0 0;
+                    position: relative;
+                    z-index: 3;
+                    .sub{
+                        text-align: center;
+                        p{
+                            padding: 5px 20px 5px 20px;
+                            font-size: 4vw;
+                        }
+                    }
+                    .main{
+                        margin: 10px 0 0 0;
+                        text-align: center;
+                        p{
+                            line-height: 1.35;
+                            font-size: 7vw;
+                            .small{
+                                font-size: 0.7em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+} /* 767px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+
+

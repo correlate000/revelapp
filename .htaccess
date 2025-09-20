@@ -1,0 +1,13 @@
+SetEnvIf Request_URI ".*" Ngx_Cache_NoCacheMode=off
+SetEnvIf Request_URI ".*" Ngx_Cache_AllCacheMode
+### BEGIN XPageSpeed - Do not edit the contents of this block! ###
+XPagespeed on
+<IfFile /var/xpagespeed/xpagespeed_ctl>
+XPagespeed off
+</IfFile>
+### END XPageSpeed - Do not edit the contents of this block! ###
+SetEnvIf Request_URI ".*" AllowCountry
+SetEnvIf Request_URI ".*" AllowRestApi
+SetEnvIf Request_URI ".*" AllowXmlrpc
+SetEnvIf Request_URI ".*" AllowWlwManifest
+SetEnvIf Request_URI ".*" WpLoginNoLimit

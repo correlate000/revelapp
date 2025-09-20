@@ -1,0 +1,486 @@
+@charset "utf-8";
+/*===================================================================================================
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+〇 GLOBAL 〇
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+====================================================================================================*/
+
+/*============================================
+	― PC表示
+=============================================*/
+
+.pc-disblock {
+    display: block;
+  }
+  
+  .pc-disline {
+    display: inline;
+  }
+  
+  .pc-dislineblock {
+    display: inline-block;
+  }
+  
+  .pc-none {
+    display: none;
+  }
+  
+  .sp-disblock {
+    display: none;
+  }
+  .sp-disline {
+    display: none;
+  }
+  
+  .sp-dislineblock {
+    display: none;
+  }
+  
+  /*============================================
+      ― スマホ表示切り替え
+  =============================================*/
+  
+  
+  @media screen and (max-width: 769px) {
+    .pc-disblock {
+      display: none;
+    }
+  
+    .pc-disline {
+      display: none;
+    }
+  
+    .pc-dislineblock {
+      display: none;
+    }
+  
+    .sp-disblock {
+      display: block;
+    }
+    .sp-disline {
+      display: inline;
+    }
+  
+    .sp-dislineblock {
+      display: inline-block;
+    }
+    .sp-none {
+      display: none;
+    }
+  }
+  
+
+  
+body{
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-family: 'Murecho';
+}
+
+// a{
+//     color: $main-color;
+// }
+
+
+.global{
+    position: relative;
+    &.title{
+        position: relative;
+        z-index: 1;
+        background: $grade-color02;
+        padding: 40px 0 80px 0;
+        .triangle{
+            position: absolute;
+            top:10px;
+            width: 400px;
+            height: calc(100% - 20px);
+            background: #fff;
+            opacity: 0.15;
+            &.left-top{
+                left:10px;
+                clip-path: polygon(0 0, 0% 100%, 100% 0);
+            }
+            
+            &.right-top{
+                right:10px;
+                clip-path: polygon(100% 0, 0 0, 100% 100%);
+            }
+        }
+        .text{
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: #fff;
+            .en{
+                text-align: center;
+                padding: 0 0 10px 0;
+                p{
+                    font-family: 'Antonio';
+                    font-weight: 600;
+                    @include gradeText(90deg,#829de7,#62b5be);
+                    letter-spacing: 5px;
+                    font-size: 24px;
+                }
+            }
+            h3{
+                
+                &.type01{
+                    .catch{
+                        position: relative;
+                        font-size: 26px;
+                    }
+                }
+                &.type02{
+                    .catch{
+                        display: inline-block;
+                        border:solid 3px #fff;
+                        border-radius: 100px;
+                        padding: 3px 35px 3px 35px;
+                        font-size: 26px;
+    
+                    }
+                }
+                &.type03{
+                    .line{
+                        text-align: center;
+                        margin: 5px 0 0 0;
+                        .catch{
+                            position: relative;
+                            display: inline-block;
+                            font-size: 26px;
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                left: 0;
+                                bottom: 5px;
+                                width: 100%;
+                                height: 6px;
+                                background: repeating-linear-gradient(-45deg, transparent, transparent 2px, #fff 2px, #fff 4px);
+                                opacity: 0.6;
+                            }
+                        }
+                    }
+                }
+            }
+            h2{
+                &.type01{
+                    .catch{
+                        font-size: 42px;
+                        .en{
+                            font-family: 'Antonio';
+                        }
+                        .big{
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+                &.type02{
+                    .line{
+                        .catch{
+                            position: relative;
+                            display: inline-block;
+                            font-size: 42px;
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                left: 0;
+                                bottom: 5px;
+                                width: 100%;
+                                height: 6px;
+                                background: repeating-linear-gradient(-45deg, transparent, transparent 2px, #fff 2px, #fff 4px);
+                                opacity: 0.6;
+                            }
+                            .en{
+                                font-family: 'Antonio';
+                            }
+                            .big{
+                                font-size: 1.2em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 1024px～1280px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .global{
+        position: relative;
+        &.title{
+            padding: 40px 0 80px 0;
+            .triangle{
+                top:10px;
+                width: 30%;
+                height: calc(100% - 20px);
+                opacity: 0.25;
+                &.left-top{
+                    left:10px;
+                    clip-path: polygon(0 0, 0% 100%, 100% 0);
+                }
+                
+                &.right-top{
+                    right:10px;
+                    clip-path: polygon(100% 0, 0 0, 100% 100%);
+                }
+            }
+            .text{
+                h3{
+                    
+                    &.type01{
+                        .catch{
+                            position: relative;
+                            font-size: 24px;
+                        }
+                    }
+                    &.type02{
+                        .catch{
+                            border-radius: 100px;
+                            padding: 3px 35px 3px 35px;
+                            font-size: 24px;
+        
+                        }
+                    }
+                    &.type03{
+                        .line{
+                            margin: 5px 0 0 0;
+                            .catch{
+                                font-size: 24px;
+                                &:before {
+                                    bottom: 5px;
+                                    height: 6px;
+                                    opacity: 0.6;
+                                }
+                            }
+                        }
+                    }
+                }
+                h2{
+                    &.type01{
+                        .catch{
+                            font-size: 38px;
+                            .big{
+                                font-size: 1.2em;
+                            }
+                        }
+                    }
+                    &.type02{
+                        .line{
+                            .catch{
+                                font-size: 38px;
+                                &:before {
+                                    bottom: 5px;
+                                    height: 6px;
+                                    opacity: 0.6;
+                                }
+                                .big{
+                                    font-size: 1.2em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+} /* 1024px～1280px responsive-close
+
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 768px～1023px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .global{
+        position: relative;
+        overflow: hidden;
+        &.title{
+            padding: 40px 0 80px 0;
+            .triangle{
+                top:10px;
+                width: 25%;
+                height: calc(100% - 20px);
+                opacity: 0.25;
+                &.left-top{
+                    left:10px;
+                    clip-path: polygon(0 0, 0% 100%, 100% 0);
+                }
+                
+                &.right-top{
+                    right:10px;
+                    clip-path: polygon(100% 0, 0 0, 100% 100%);
+                }
+            }
+            .text{
+                h3{
+                    
+                    &.type01{
+                        .catch{
+                            position: relative;
+                            font-size: 24px;
+                        }
+                    }
+                    &.type02{
+                        .catch{
+                            border-radius: 100px;
+                            padding: 3px 35px 3px 35px;
+                            font-size: 24px;
+        
+                        }
+                    }
+                    &.type03{
+                        .line{
+                            margin: 5px 0 0 0;
+                            .catch{
+                                font-size: 24px;
+                                &:before {
+                                    bottom: 5px;
+                                    height: 6px;
+                                    opacity: 0.6;
+                                }
+                            }
+                        }
+                    }
+                }
+                h2{
+                    &.type01{
+                        .catch{
+                            font-size: 38px;
+                            .big{
+                                font-size: 1.2em;
+                            }
+                        }
+                    }
+                    &.type02{
+                        .line{
+                            .catch{
+                                font-size: 38px;
+                                &:before {
+                                    bottom: 5px;
+                                    height: 6px;
+                                    opacity: 0.6;
+                                }
+                                .big{
+                                    font-size: 1.2em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+} /* 768px～1023px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+
+/**********************************************************************************
+ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+◆	Stylesheet: 767pxまで(スマホ)のモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+
+    .global{
+        position: relative;
+        &.title{
+            padding: 40px 0 80px 0;
+            .triangle{
+                top:10px;
+                width: 15%;
+                height: 25%;
+                opacity: 0.25;
+                &.left-top{
+                    left:10px;
+                    clip-path: polygon(0 0, 0% 100%, 100% 0);
+                }
+                
+                &.right-top{
+                    right:10px;
+                    clip-path: polygon(100% 0, 0 0, 100% 100%);
+                }
+            }
+            .text{
+                h3{
+                    
+                    &.type01{
+                        .catch{
+                            position: relative;
+                            font-size: 4.75vw;
+                        }
+                    }
+                    &.type02{
+                        .catch{
+                            border-radius: 100px;
+                            padding: 3px 35px 3px 35px;
+                            font-size: 4.75vw;
+        
+                        }
+                    }
+                    &.type03{
+                        .line{
+                            margin: 5px 0 0 0;
+                            .catch{
+                                font-size: 4.75vw;
+                                &:before {
+                                    bottom: 5px;
+                                    height: 6px;
+                                    opacity: 0.6;
+                                }
+                            }
+                        }
+                    }
+                }
+                h2{
+                    &.type01{
+                        .catch{
+                            font-size: 8vw;
+                            .big{
+                                font-size: 1.2em;
+                            }
+                        }
+                    }
+                    &.type02{
+                        .line{
+                            .catch{
+                                font-size: 8vw;
+                                &:before {
+                                    bottom: 5px;
+                                    height: 6px;
+                                    opacity: 0.6;
+                                }
+                                .big{
+                                    font-size: 1.2em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+} /* 767px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/

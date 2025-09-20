@@ -1,0 +1,628 @@
+@charset "utf-8";
+/*===================================================================================================
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+〇 FOOTER 〇
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+====================================================================================================*/
+
+.footer {
+	margin: 0px 0 0 0;
+	overflow: hidden;
+	.wrapper {
+		background: linear-gradient(135deg,#092981 0%,#07557b 100%);
+		.inner {
+			padding: 80px 0 80px 0;
+			.top {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				max-width: 1480px;
+				padding: 0 2% 0 2%;
+				margin: 0 auto 0;
+				.logo {
+					display: flex;
+					align-items: center;
+					.image {
+						line-height: 1;
+						width: 300px;
+						margin: 0 0 0 0;
+						img {
+							width: 100%;
+							height: auto;
+						}
+					}
+					.caption {
+						font-style: normal;
+						color: #fff;
+						line-height: 1.35;
+						letter-spacing: 1px;
+						font-weight: 500;
+						font-size: 15px;
+						padding: 0 0 0 30px;
+					}
+				}
+				.block {
+					@include flexBase(flex-start,flex-start);
+					.semi {
+
+						.mark{
+							p{
+								position: relative;
+								display: inline-block;
+								background: #fff;
+								color:$main-color;
+								padding: 6px 30px 6px 30px;
+								font-size: 16px;
+								&::before{
+									@include gradeBorder(3px,3px)
+								}
+
+							}
+						}
+						.main{
+							color: #fff;
+							margin: 5px 0 0 0;
+							line-height: 1.8;
+							letter-spacing: 2px;
+							font-size: 18px;
+						}
+						&:nth-child(1){
+							padding: 0 35px 0 0
+						}
+					}
+
+				}
+			}
+			.middle{
+				@include flexBase(center,space-between);
+				max-width: 1480px;
+				padding: 0 2% 0 2%;
+				margin: 60px auto 0;
+				ul {
+					width: 70%;
+					list-style-type: none;
+					margin: 0 0 0 0;
+					display: flex;
+					justify-content: flex-start;
+					flex-wrap: wrap;
+					padding: 0 50px 0 0;
+					li {
+						padding: 10px 20px 10px 0px;
+						a {
+						font-style: normal;
+						text-decoration: none;
+						color: #fff;
+						letter-spacing: 1px;
+						font-size: 20px;
+						}
+					}
+				}
+				.button {
+					margin: 0px 0 0 0;
+					a {
+						text-decoration: none;
+						color: #fff;
+						border: solid 2px #fff;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						padding: 10px 30px 10px 30px;
+						.icon {
+							line-height: 0;
+							width: 30px;
+							margin: 0 10px 0 0;
+							img {
+								width: 100%;
+								height: auto;
+							}
+						}
+						.catch {
+							font-style: normal;
+							color: #fff;
+							letter-spacing: 1px;
+							font-size: 20px;
+						}
+					}
+				}
+			}
+
+		}
+		.bottom{
+			ul{
+				list-style-type: none;
+				max-width: 1480px;
+				padding: 0 2% 0 2%;
+				margin: 10px auto 0;
+				display: flex;
+				justify-content: flex-end;
+				flex-wrap: wrap;
+				li {
+					padding: 10px 20px 10px 20px;
+					a {
+					font-style: normal;
+					text-decoration: none;
+					color: #fff;
+					letter-spacing: 1px;
+					font-size: 18px;
+					}
+				}
+			}
+		}
+		.last {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-direction: row-reverse;
+			border-top: solid 2px #fff;
+			max-width: 1480px;
+			padding: 15px 2% 20px 2%;
+			margin: 20px auto 0;
+			color: #fff;
+			.left {
+				ul {
+					margin: 0 0 0 0;
+					padding: 0 0 0 0;
+					display: flex;
+					align-items: center;
+					list-style: none;
+					li {
+					padding: 0 0 0 20px;
+					a {
+						text-decoration: none;
+						color: #fff;
+						font-weight: 700;
+						padding: 0 0px 0 0px;
+						font-size: 18px;
+					}
+					}
+				}
+			}
+			.right {
+				small {
+					font-style: normal;
+					display: block;
+					font-family: 'Antonio';
+					letter-spacing: 5px;
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 1024px～1280px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+	.footer {
+		.wrapper {
+			.inner {
+				padding: 50px 0 50px 0;
+				.top {
+					max-width: 1480px;
+					padding: 0 2% 0 2%;
+					margin: 0 auto 0;
+					.logo {
+						.image {
+							width: 230px;
+							margin: 0 0 0 0;
+							img {
+								width: 100%;
+								height: auto;
+							}
+						}
+						.caption {
+							font-size: 14px;
+							padding: 0 0 0 30px;
+						}
+					}
+					.block {
+						.semi {
+							.mark{
+								p{
+									padding: 6px 25px 6px 25px;
+									font-size: 16px;
+									&::before{
+										@include gradeBorder(3px,3px)
+									}
+	
+								}
+							}
+							.main{
+								margin: 5px 0 0 0;
+								line-height: 1.8;
+								letter-spacing: 2px;
+								font-size: 16px;
+							}
+							&:nth-child(1){
+								padding: 0 25px 0 0
+							}
+						}
+	
+					}
+				}
+				.middle{
+					max-width: 1480px;
+					padding: 0 2% 0 2%;
+					margin: 60px auto 0;
+					ul {
+						width: 70%;
+						margin: 0 0 0 0;
+						padding: 0 50px 0 0;
+						li {
+							padding: 10px 20px 10px 0px;
+							a {
+							letter-spacing: 1px;
+							font-size: 16px;
+							}
+						}
+					}
+					.button {
+						margin: 0px 0 0 0;
+						a {
+							padding: 10px 30px 10px 30px;
+							.icon {
+								line-height: 0;
+								width: 30px;
+								margin: 0 10px 0 0;
+								img {
+									width: 100%;
+									height: auto;
+								}
+							}
+							.catch {
+								letter-spacing: 1px;
+								font-size: 20px;
+							}
+						}
+					}
+				}
+	
+			}
+			.bottom{
+				ul{
+					max-width: 1480px;
+					padding: 0 2% 0 2%;
+					margin: 10px auto 0;
+					li {
+						padding: 10px 20px 10px 20px;
+						a {
+						letter-spacing: 1px;
+						font-size: 16px;
+						}
+					}
+				}
+			}
+			.last {
+				max-width: 1480px;
+				padding: 15px 2% 20px 2%;
+				margin: 20px auto 0;
+				.left {
+					ul {
+						margin: 0 0 0 0;
+						padding: 0 0 0 0;
+						li {
+						padding: 0 0 0 20px;
+						a {
+							padding: 0 0px 0 0px;
+							font-size: 16px;
+						}
+						}
+					}
+				}
+				.right {
+					small {
+						letter-spacing: 7px;
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+	
+} /* 1024px～1280px responsive-close
+
+
+
+/**********************************************************************************
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
+
+◆	Stylesheet: 768px～1023px(iPad縦からiPad横)までのモニタで適用	◆
+
+start----------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.footer {
+		.wrapper {
+			.inner {
+				padding: 50px 0 50px 0;
+				.top {
+					max-width: 1480px;
+					padding: 0 2% 0 2%;
+					margin: 0 auto 0;
+					.logo {
+						display: block;
+						.image {
+							width: 230px;
+							margin: 0 0 0 0;
+							img {
+								width: 100%;
+								height: auto;
+							}
+						}
+						.caption {
+							font-size: 14px;
+							padding: 10px 0 0 0px;
+						}
+					}
+					.block {
+						.semi {
+							.mark{
+								p{
+									padding: 6px 25px 6px 25px;
+									font-size: 16px;
+									&::before{
+										@include gradeBorder(3px,3px)
+									}
+	
+								}
+							}
+							.main{
+								margin: 5px 0 0 0;
+								line-height: 1.8;
+								letter-spacing: 2px;
+								font-size: 16px;
+							}
+							&:nth-child(1){
+								padding: 0 25px 0 0
+							}
+						}
+	
+					}
+				}
+				.middle{
+					max-width: 1480px;
+					padding: 0 2% 0 2%;
+					margin: 60px auto 0;
+					ul {
+						width: 50%;
+						margin: 0 0 0 0;
+						padding: 0 50px 0 0;
+						li {
+							padding: 10px 20px 10px 0px;
+							a {
+							letter-spacing: 1px;
+							font-size: 16px;
+							}
+						}
+					}
+					.button {
+						margin: 0px 0 0 0;
+						a {
+							padding: 10px 30px 10px 30px;
+							.icon {
+								line-height: 0;
+								width: 30px;
+								margin: 0 10px 0 0;
+								img {
+									width: 100%;
+									height: auto;
+								}
+							}
+							.catch {
+								letter-spacing: 1px;
+								font-size: 20px;
+							}
+						}
+					}
+				}
+	
+			}
+			.bottom{
+				ul{
+					max-width: 1480px;
+					padding: 0 2% 0 2%;
+					margin: 10px auto 0;
+					li {
+						padding: 10px 20px 10px 20px;
+						a {
+						letter-spacing: 1px;
+						font-size: 16px;
+						}
+					}
+				}
+			}
+			.last {
+				max-width: 1480px;
+				padding: 15px 2% 20px 2%;
+				margin: 20px auto 0;
+				.left {
+					ul {
+						margin: 0 0 0 0;
+						padding: 0 0 0 0;
+						li {
+						padding: 0 0 0 20px;
+						a {
+							padding: 0 0px 0 0px;
+							font-size: 16px;
+						}
+						}
+					}
+				}
+				.right {
+					small {
+						letter-spacing: 7px;
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+} /* 768px～1023px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
+
+/**********************************************************************************
+ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+
+◆	Stylesheet: 767pxまで(スマホ)のモニタで適用	◆
+
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+start----------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+	.footer {
+		.wrapper {
+			.inner {
+				padding: 50px 0 50px 0;
+				.top {
+					max-width: 1480px;
+					padding: 0 4% 0 4%;
+					margin: 0 auto 0;
+					display: block;
+					.logo {
+						display: block;
+						.image {
+							width: 65%;
+							margin: 0 auto 0;
+							img {
+								width: 100%;
+								height: auto;
+							}
+						}
+						.caption {
+							font-size: 3vw;
+							text-align: center;
+							padding: 10px 0 0 0px;
+						}
+					}
+					.block {
+						margin: 50px 0 0 0;
+						letter-spacing: 0;
+						.semi {
+							.mark{
+								p{
+									padding: 6px 25px 6px 25px;
+									font-size: 3.75vw;
+									&::before{
+										@include gradeBorder(3px,3px)
+									}
+	
+								}
+							}
+							.main{
+								margin: 5px 0 0 0;
+								line-height: 1.8;
+								letter-spacing: 2px;
+								font-size: 3.5vw;
+								padding: 0 0 0 10px;
+							}
+							&:nth-child(1){
+								padding: 0 0 0 0
+							}
+						}
+	
+					}
+				}
+				.middle{
+					max-width: 1480px;
+					padding: 0 2% 0 2%;
+					margin: 60px auto 0;
+					display: block;
+					ul {
+						
+						display: block;
+						width: 100%;
+						margin: 0 0 0 0;
+						padding: 0 0px 0 0;
+						li {
+							padding: 0px 0px 0px 0px;
+							a {
+								display: block;
+								text-align: center;
+								letter-spacing: 1px;
+								font-size: 4vw;
+								border-top:solid 1px $light-color;
+								padding: 10px 10px 10px 10px;
+							}
+							&:last-child{
+								a{
+									border-bottom:solid 1px $light-color;
+								}
+							}
+						}
+					}
+					.button {
+						margin: 20px 0 0 0;
+						a {
+							padding: 10px 30px 10px 30px;
+							.icon {
+								line-height: 0;
+								width: 6vw;
+								margin: 0 10px 0 0;
+								img {
+									width: 100%;
+									height: auto;
+								}
+							}
+							.catch {
+								letter-spacing: 1px;
+								font-size: 4.75vw;
+							}
+						}
+					}
+				}
+	
+			}
+			.bottom{
+				ul{
+					max-width: 1480px;
+					padding: 0 2% 0 2%;
+					margin: 10px auto 0;
+					li {
+						padding: 10px 20px 10px 20px;
+						a {
+						letter-spacing: 1px;
+						font-size: 3.75vw;
+						}
+					}
+				}
+			}
+			.last {
+				max-width: 1480px;
+				padding: 15px 2% 20px 2%;
+				margin: 20px auto 0;
+				.left {
+					ul {
+						margin: 0 0 0 0;
+						padding: 0 0 0 0;
+						li {
+						padding: 0 0 0 20px;
+						a {
+							padding: 0 0px 0 0px;
+							font-size: 3.75vw;
+						}
+						}
+					}
+				}
+				.right {
+					small {
+						letter-spacing: 7px;
+						font-size: 3vw;
+					}
+				}
+			}
+		}
+	}
+} /* 767px responsive-closed */
+
+/*end ----------------------------------------------------------------------------
+□ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
+**********************************************************************************/
