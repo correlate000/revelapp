@@ -126,7 +126,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			.rightmenu a span{display:block;line-height:1.3;}
 			.rightmenu a br.sp{display:block;}
 			.rightmenu{display:flex;position:fixed;right:0;left:0;bottom:0;}
-			.rightmenu a{margin:0;width:33.33%;border-radius:0;border:2px solid #fff;border-bottom:none;text-align:center;line-height:1.2;padding:0.75rem 0.5rem;font-size:11px;display:flex;flex-direction:column;justify-content: center;align-items: center;writing-mode:initial;text-orientation:initial;min-height:60px;}
+			.rightmenu a{margin:0;width:33.33%;border-radius:0;border:2px solid #fff;border-bottom:none;text-align:center;line-height:1.2;padding:0.75rem 0.5rem;font-size:12px;display:flex;flex-direction:column;justify-content: center;align-items: center;writing-mode:initial;text-orientation:initial;min-height:60px;}
 			.rightmenu a svg{width:1.2rem;margin-bottom:0.3rem;margin-right:0;}
 			.rightmenu a:hover{padding-right:0;width:33.33%;margin:0;}
 		}
@@ -160,71 +160,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="line"><div class="catch">ブロックチェーンゲーム活用型の<br class="sp-disblock">工賃作業にもなる</div><!-- end .catch --></div><!-- end .line -->
 					<div class="line"><div class="catch">オールインワンツール</div><!-- end .catch --></div><!-- end .line -->
                 </h1>
-				<style>
-					.button_consul_wrap{display:flex;}
-					a.bc2_wrap{display:flex;align-items: center;justify-content: center;background:#fff;color:#fff !important;height:100%;margin:0 1rem;border-radius:4rem;font-size: 22px;/*border:2px solid #3465e5;*/border-bottom: solid 8px #3465e5;letter-spacing: 1px;font-weight: 600;font-family: "Murecho";padding:0 !important;background: linear-gradient(90deg, #1ba3eb, #85d81f);}
-					a.bc2_wrap svg{width:1.5rem;margin-right:.5rem;}
-					a.bc3_wrap{display:inline-flex !important;align-items: center;justify-content: center;background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;color:#fff !important;height:100%;margin:0 1rem;border-radius:4rem !important;font-size: 22px;border-bottom: solid 8px #764ba2;letter-spacing: 1px;font-weight: 600;font-family: "Murecho";padding:14px 35px !important;}
-					a.bc3_wrap svg{width:1.5rem;margin-right:.5rem;}
-					.button.consul3 .pc{display:inline;}
-					.button.consul3 .sp{display:none;}
-					@media screen and (max-width: 767px) {
-						.button_consul_wrap{flex-direction: column;gap: 10px;padding: 0 15px;}
-						.button_consul_wrap .button{width: 100%;margin: 0;}
-
-						/* 統一されたボタンスタイル */
-						.button.consul a,
-						a.bc2_wrap,
-						a.bc3_wrap {
-							display: flex !important;
-							align-items: center !important;
-							justify-content: center !important;
-							font-size: 16px !important;
-							padding: 18px 20px !important;
-							margin: 0 !important;
-							border-radius: 2rem !important;
-							width: 100% !important;
-							min-height: 56px !important;
-							line-height: 1.2 !important;
-							border-bottom-width: 4px !important;
-						}
-
-						/* 1つ目のボタン（資料ダウンロード）*/
-						.button.consul a {
-							background: linear-gradient(90deg, #f76002 0%, #ffb300 100%) !important;
-							color: #fff !important;
-							border-bottom: 4px solid #f76002 !important;
-							text-decoration: none;
-							flex-direction: column;
-						}
-						.button.consul .bottom {
-							display: flex;
-							align-items: center;
-							justify-content: center;
-							flex-direction: row;
-							padding: 0;
-						}
-						.button.consul .bottom .icon {margin-right: 0.5rem;}
-						.button.consul .bottom .icon img {width: 1.3rem;}
-						.button.consul .bottom .arrow {display: none;}
-						.button.consul .bottom .catch {font-size: 16px;line-height: 1.2;font-weight: 600;}
-
-						/* アイコン統一 */
-						a.bc2_wrap svg,
-						a.bc3_wrap svg {
-							width: 1.3rem !important;
-							margin-right: 0.5rem !important;
-							flex-shrink: 0;
-						}
-
-						/* テキスト表示切り替え */
-						.button.consul3 .pc{display:none;}
-						.button.consul3 .sp{display:inline;}
-						.button.consul3 svg.pc{display:none;}
-
-						.custom-case-button{width: 100% !important;margin-top: 0 !important;}
-					}
-				</style>
 				<div class="button_consul_wrap">
 					<div class="button consul">
 						<a href="#form-wrapper">
@@ -251,19 +186,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<svg astro-icon="user" role="img" viewBox="0 0 16 18" aria-hidden="true" fill="none" data-astro-cid-5pfho6lz="true"><g clip-path="url(#astroicon:usera)"><path d="M9.611 10.692a6.263 6.263 0 0 1 6.264 6.264c0 .576-.468 1.044-1.044 1.044H1.169a1.045 1.045 0 0 1-1.044-1.044 6.263 6.263 0 0 1 6.264-6.264h3.222ZM3.5 4.5C3.5 2.016 5.516 0 8 0s4.5 2.016 4.5 4.5S10.484 9 8 9a4.502 4.502 0 0 1-4.5-4.5Z" fill="#fff"></path></g><defs><clipPath id="astroicon:usera"><path d="M0 0h15.75v18H0z" fill="#fff" transform="translate(.125)"></path></clipPath></defs></svg>無料体験<wbr>・<wbr>個別相談予約
 						</a>
 					</div><!-- end .button -->
-				</div><!-- end .button -->
-				<div class="button consul3 custom-case-button" style="width: 100%; text-align: left; margin-top: 20px;">
-					<a href="https://revelapp.jp/media/category/customerstory/" target="_blank" class="bc3_wrap" style="display: inline-flex; align-items: center; padding: 14px 35px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; text-decoration: none; border-radius: 25px; font-weight: bold; font-size: 16px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.1)';">
-					<svg style="width: 20px; height: 20px; margin-right: 8px;" viewBox="0 0 20 18" fill="none">
-						<path d="M5 4V2C5 0.896 5.896 0 7 0h6c1.104 0 2 0.896 2 2v2h3c1.104 0 2 0.896 2 2v10c0 1.104-0.896 2-2 2H2c-1.104 0-2-0.896-2-2V6c0-1.104 0.896-2 2-2h3zm2 0h6V2H7v2zm11 2H2v10h16V6z" fill="#fff"/>
-					</svg>
-						<span class="pc">導入事例集はこちら</span>
-						<span class="sp">導入事例</span>
-					<svg class="pc" style="width: 16px; height: 16px; margin-left: 6px;" viewBox="0 0 24 24" fill="none">
-						<path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-					</svg>
-					</a>
-				</div>
+					<div class="button consul3">
+						<a href="https://revelapp.jp/media/category/customerstory/" target="_blank" class="bc3_wrap">
+						<svg astro-icon="case" role="img" viewBox="0 0 20 18" aria-hidden="true" fill="none" data-astro-cid-5pfho6lz="true"><path d="M5 4V2C5 0.896 5.896 0 7 0h6c1.104 0 2 0.896 2 2v2h3c1.104 0 2 0.896 2 2v10c0 1.104-0.896 2-2 2H2c-1.104 0-2-0.896-2-2V6c0-1.104 0.896-2 2-2h3zm2 0h6V2H7v2zm11 2H2v10h16V6z" fill="#fff"/></svg>
+						導入事例集はこちら
+						<svg class="pc" style="width: 16px; height: 16px; margin-left: 6px;" viewBox="0 0 24 24" fill="none">
+							<path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						</a>
+					</div><!-- end .button -->
+				</div><!-- end .button_consul_wrap -->
 			</div><!-- end .button -->
 			</div><!-- end .header -->
         </div><!-- end .container -->
@@ -996,16 +928,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div><!-- end .top -->
 				
 				<div class="middle">
-					
+
 					<ul>
 						<li><a href="#header">ページトップ</a></li>
-						<li><a href="#recommend">導入施設の声・推薦</a></li>
-						<li><a href="#game-list">ゲーム型工業工賃一覧</a></li>
 						<li><a href="#feature">RevelAppの特徴</a></li>
 						<li><a href="#point">導入のポイント</a></li>
-						<li><a href="#future">今後の展開</a></li>
+						<li><a href="#recommend">導入施設の声・推薦</a></li>
+						<li><a href="#game-list">ゲーム型工業工賃一覧</a></li>
 						<li><a href="#faq">よくある質問</a></li>
 						<li><a href="#form-wrapper">資料請求・お問い合わせ</a></li>
+						<li><a href="https://revelapp.jp/media/category/customerstory/" target="_blank">導入事例</a></li>
+						<li><a href="https://portal.revelapp.jp" target="_blank">RevelAppポータル</a></li>
 					</ul>
 					<div class="button">
 						<a href="https://wave3.jp/" target="_blank">

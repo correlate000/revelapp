@@ -1033,7 +1033,7 @@ start---------------------------------------------------------------------------
 .header03 .container .text .button a {
   text-decoration: none;
   color: #fff;
-  padding: 5px 0 20px 0;
+  padding: 5px 0 0px 0;
 }
 .header03 .container .text .button a .top {
   text-align: center;
@@ -1085,6 +1085,7 @@ start---------------------------------------------------------------------------
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
 }
 .header03 .container .text .button.consul a .bottom .icon {
   line-height: 0;
@@ -1106,6 +1107,78 @@ start---------------------------------------------------------------------------
   width: 100%;
   height: auto;
 }
+
+/* ボタングループのスタイル（3つのボタン用） */
+.button_consul_wrap{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: stretch;
+  max-width: 1020px;
+}
+
+/* 1つ目と2つ目のボタンは横並び、同じ高さ */
+.button.consul, .button.consul2 {
+  flex: 1;
+  min-width: 240px;
+  display: flex;
+}
+
+/* 1つ目のボタンの高さを他と揃える */
+.button.consul a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* 2つ目のボタン（無料体験・個別相談）*/
+.button.consul2 {
+  display: flex;
+}
+.button.consul2 a.bc2_wrap{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color:#fff !important;
+  width: 100%;
+  height: 100%;
+  border-radius:50px;
+  font-size: 20px;
+  border-bottom: solid 6px #3465e5;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  font-family: "Murecho";
+  padding:25px 30px !important;
+  background: linear-gradient(90deg, #1ba3eb, #85d81f);
+  text-decoration: none;
+}
+.button.consul2 a.bc2_wrap svg{width:1.5rem;margin-right:.5rem;}
+
+/* 3つ目のボタン（導入事例）- 下段に配置、左詰め */
+.button.consul3 {
+  flex-basis: 100%;
+  text-align: left;
+  margin-top: 10px !important;
+}
+.button.consul3 a.bc3_wrap{
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: #fff !important;
+  border-radius: 30px !important;
+  font-size: 18px;
+  border-bottom: solid 4px #764ba2;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  font-family: "Murecho";
+  padding: 12px 24px !important;
+  text-decoration: none;
+}
+.button.consul3 a.bc3_wrap svg{width:1.2rem;margin-right:.5rem;}
 
 /**********************************************************************************
 □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □  
@@ -1680,6 +1753,90 @@ start---------------------------------------------------------------------------
     width: 100%;
     height: auto;
   }
+
+  /* ボタン基本SPスタイル */
+  .header03 .container .text .button {
+    width: 90%;
+    margin: 10px auto 0;
+    padding: 1px 0 0 0;
+  }
+
+  /* ボタングループ SPスタイル */
+  .button_consul_wrap {
+    flex-direction: column;
+    gap: 0;
+    padding: 0 15px;
+    margin-top: 30px;
+    max-width: 100%;
+  }
+
+  .button_consul_wrap .button{width: 100%;margin: 0 0 8px 0;float: none;}
+  .button_consul_wrap .button:last-child{margin-bottom: 0;padding-top: 0;}
+  .button.consul3 {margin-top: 0;flex-basis: auto;}
+
+  /* 統一されたボタンスタイル */
+  .button.consul a,
+  .button.consul2 a.bc2_wrap,
+  .button.consul3 a.bc3_wrap {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 16px !important;
+    padding: 16px 20px !important;
+    margin: 0 !important;
+    border-radius: 2rem !important;
+    width: 100% !important;
+    min-height: 52px !important;
+    line-height: 1.2 !important;
+    border-bottom-width: 4px !important;
+  }
+
+  /* 1つ目のボタン（資料ダウンロード）調整 */
+  .button.consul a {
+    background: linear-gradient(90deg, #f76002 0%, #ffb300 100%) !important;
+    color: #fff !important;
+    border-bottom: 4px solid #f76002 !important;
+    text-decoration: none;
+    flex-direction: column;
+    padding: 14px 20px 0 !important;
+  }
+
+  .header03 .container .text .button a .top {
+    margin: -40px 0 0 0;
+  }
+
+  .header03 .container .text .button a .top .catch p {
+    font-size: 13px;
+    line-height: 1.65;
+    letter-spacing: 1px;
+  }
+
+  .button.consul .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .header03 .container .text .button.consul a .bottom .catch {
+    padding: 0 0px 0 0px;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+
+  /* アイコン統一 */
+  .button.consul2 a.bc2_wrap svg,
+  .button.consul3 a.bc3_wrap svg {
+    width: 1.3rem !important;
+    margin-right: 0.5rem !important;
+    flex-shrink: 0;
+  }
+
+  /* 3つ目のボタン（導入事例）SP調整 */
+  .button.consul3 svg.pc{display:none;}
+  .button.consul3 a.bc3_wrap {border-bottom: 4px solid #764ba2 !important;}
 } /* 767px responsive-closed */
 /*end ----------------------------------------------------------------------------
 □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ □ 
@@ -6635,7 +6792,8 @@ start---------------------------------------------------------------------------
   max-width: 1280px;
 }
 .simple-cta .wrapper .block .button {
-  width: 48%;
+  width: 48% !important;
+  max-width: 48%;
   font-weight: 700;
   border-radius: 100px;
 }
@@ -7124,7 +7282,8 @@ start---------------------------------------------------------------------------
     display: block;
   }
   .simple-cta .wrapper .block .button {
-    width: 100%;
+    width: 100% !important;
+    max-width: 100%;
     border-radius: 100px;
   }
   .simple-cta .wrapper .block .button a {
@@ -7132,7 +7291,7 @@ start---------------------------------------------------------------------------
     display: block;
   }
   .simple-cta .wrapper .block .button a .top {
-    margin: -15px 0 0 0;
+    margin: -25px 0 0 0;
     padding: 1px 0 0 0;
   }
   .simple-cta .wrapper .block .button a .top .catch {
@@ -7157,6 +7316,7 @@ start---------------------------------------------------------------------------
   .simple-cta .wrapper .block .button a .bottom {
     margin: 4px 0 0 0;
     padding: 5px 25px 15px 25px;
+    gap: 10px;
   }
   .simple-cta .wrapper .block .button.consul a .top .catch p {
     color: #e86103;
