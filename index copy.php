@@ -95,14 +95,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<nav class="nav">
 				<ul>
 					<li><a href="#header">ページトップ</a></li>
-					<li><a href="#feature">RevelAppの特徴</a></li>
-					<li><a href="#point">導入のポイント</a></li>
 					<li><a href="#recommend">導入施設の声・推薦</a></li>
 					<li><a href="#game-list">ゲーム型工業工賃一覧</a></li>
+					<li><a href="#feature">RevelAppの特徴</a></li>
+					<li><a href="#point">導入のポイント</a></li>
+					<li><a href="#future">今後の展開</a></li>
 					<li><a href="#faq">よくある質問</a></li>
 					<li><a href="#form-wrapper">資料請求・お問い合わせ</a></li>
-					<li><a href="https://revelapp.jp/media/category/customerstory/" target="_blank">導入事例</a></li>
-					<li><a href="https://portal.revelapp.jp" target="_blank">RevelAppポータル</a></li>
 				</ul>
 			</nav>
         </div><!-- end .container -->
@@ -111,7 +110,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 	<style>
 		.rightmenu{display:block;position:fixed;right:0;bottom:2rem;z-index:99;}
-		.rightmenu a{display:block;width:2.5rem;padding:1rem .75rem;margin:1rem 0 1rem .5rem;color:#fff;font-weight:bold;border:2px solid #fff;border-right:none;border-radius:1rem 0 0 1rem;line-height:1.15;box-shadow:1px 3px 6px rgba(0,0,0,.4);text-align:center;writing-mode:vertical-rl;text-orientation:upright;}
+		.rightmenu a{display:block;width:2.5rem;padding:1rem .75rem;margin:1rem 0 1rem .5rem;color:#fff;font-weight:bold;border:2px solid #fff;border-right:none;border-radius:1rem 0 0 1rem;line-height:1.15;box-shadow:1px 3px 6px rgba(0,0,0,.4);text-align:center;}
 		.rightmenu a svg{width:1rem;margin-bottom:.3rem;}
 		.rightmenu a.rightmenu1{background: linear-gradient(90deg, #f76002 0%, #ffb300 100%);}
 		.rightmenu a.rightmenu2{background: linear-gradient(90deg, #1ba3eb, #85d81f);}
@@ -119,22 +118,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		.rightmenu a:hover{padding-right:1.25rem;width:3rem;margin:1rem 0;}
 		.rightmenu .pc{display:inline;}
 		.rightmenu .sp{display:none;}
-		.rightmenu br.sp{display:none;}
 		@media screen and (max-width: 767px) {
 			.rightmenu .pc{display:none;}
 			.rightmenu .sp{display:inline;}
-			.rightmenu a span{display:block;line-height:1.3;}
-			.rightmenu a br.sp{display:block;}
 			.rightmenu{display:flex;position:fixed;right:0;left:0;bottom:0;}
-			.rightmenu a{margin:0;width:33.33%;border-radius:0;border:2px solid #fff;border-bottom:none;text-align:center;line-height:1.2;padding:0.75rem 0.5rem;font-size:11px;display:flex;flex-direction:column;justify-content: center;align-items: center;writing-mode:initial;text-orientation:initial;min-height:60px;}
-			.rightmenu a svg{width:1.2rem;margin-bottom:0.3rem;margin-right:0;}
+			.rightmenu a{margin:0;width:33.33%;border-radius:0;border:2px solid #fff;border-bottom:none;text-align:center;line-height:3.25rem;padding:0;font-size:90%;display:flex;justify-content: center;align-items: center;}
+			.rightmenu a svg{width:1rem;margin-bottom:0;margin-right:.3rem;}
 			.rightmenu a:hover{padding-right:0;width:33.33%;margin:0;}
 		}
 	</style>
 	<section class="rightmenu">
-		<a href="#form-wrapper" class="rightmenu1"><svg astro-icon="book" role="img" viewBox="0 0 15 16" aria-hidden="true" fill="none" data-astro-cid-5pfho6lz="true"><g clip-path="url(#astroicon:booka)"><path d="M13.806 12.411v2.092h.251c.412 0 .755.331.755.754a.746.746 0 0 1-.755.754H3.303A2.502 2.502 0 0 1 .8 13.51V2.503A2.502 2.502 0 0 1 3.303 0h10c.823 0 1.497.674 1.497 1.497v9.497c0 .652-.423 1.2-1.006 1.406l.012.011ZM13.303 1.51h-10c-.549 0-1.006.445-1.006 1.005v8.709c.309-.137.64-.206 1.006-.206h10v-9.52.012Zm-1.006 10.994H3.303c-.549 0-1.006.446-1.006 1.006a1 1 0 0 0 1.006 1.005h9.006v-2l-.012-.011ZM4.8 4.25c0-.411.343-.754.754-.754h5.498c.41 0 .754.332.754.754a.746.746 0 0 1-.754.755H5.554A.761.761 0 0 1 4.8 4.25Zm0 2.503c0-.411.343-.754.754-.754h5.498c.41 0 .754.331.754.754a.746.746 0 0 1-.754.755H5.554a.761.761 0 0 1-.754-.755Z" fill="#fff"></path></g><defs><clipPath id="astroicon:booka"><path d="M0 0h14v16H0z" fill="#fff" transform="translate(.8)"></path></clipPath></defs></svg><span>資料<wbr>ダウンロード</span></a>
-		<a href="/info.php" class="rightmenu2"><svg astro-icon="user" role="img" viewBox="0 0 16 18" aria-hidden="true" fill="none" data-astro-cid-5pfho6lz="true"><g clip-path="url(#astroicon:usera)"><path d="M9.611 10.692a6.263 6.263 0 0 1 6.264 6.264c0 .576-.468 1.044-1.044 1.044H1.169a1.045 1.045 0 0 1-1.044-1.044 6.263 6.263 0 0 1 6.264-6.264h3.222ZM3.5 4.5C3.5 2.016 5.516 0 8 0s4.5 2.016 4.5 4.5S10.484 9 8 9a4.502 4.502 0 0 1-4.5-4.5Z" fill="#fff"></path></g><defs><clipPath id="astroicon:usera"><path d="M0 0h15.75v18H0z" fill="#fff" transform="translate(.125)"></path></clipPath></defs></svg><span>無料体験<wbr>・<br class="sp">個別相談予約</span></a>
-		<a href="https://revelapp.jp/media/category/customerstory/" target="_blank" class="rightmenu3"><svg astro-icon="case" role="img" viewBox="0 0 20 18" aria-hidden="true" fill="none" data-astro-cid-5pfho6lz="true"><path d="M5 4V2C5 0.896 5.896 0 7 0h6c1.104 0 2 0.896 2 2v2h3c1.104 0 2 0.896 2 2v10c0 1.104-0.896 2-2 2H2c-1.104 0-2-0.896-2-2V6c0-1.104 0.896-2 2-2h3zm2 0h6V2H7v2zm11 2H2v10h16V6z" fill="#fff"></path></svg><span>導入事例</span></a>
+		<a href="#form-wrapper" class="rightmenu1"><svg astro-icon="book" role="img" viewBox="0 0 15 16" aria-hidden="true" fill="none" data-astro-cid-5pfho6lz="true"><g clip-path="url(#astroicon:booka)"><path d="M13.806 12.411v2.092h.251c.412 0 .755.331.755.754a.746.746 0 0 1-.755.754H3.303A2.502 2.502 0 0 1 .8 13.51V2.503A2.502 2.502 0 0 1 3.303 0h10c.823 0 1.497.674 1.497 1.497v9.497c0 .652-.423 1.2-1.006 1.406l.012.011ZM13.303 1.51h-10c-.549 0-1.006.445-1.006 1.005v8.709c.309-.137.64-.206 1.006-.206h10v-9.52.012Zm-1.006 10.994H3.303c-.549 0-1.006.446-1.006 1.006a1 1 0 0 0 1.006 1.005h9.006v-2l-.012-.011ZM4.8 4.25c0-.411.343-.754.754-.754h5.498c.41 0 .754.332.754.754a.746.746 0 0 1-.754.755H5.554A.761.761 0 0 1 4.8 4.25Zm0 2.503c0-.411.343-.754.754-.754h5.498c.41 0 .754.331.754.754a.746.746 0 0 1-.754.755H5.554a.761.761 0 0 1-.754-.755Z" fill="#fff"></path></g><defs><clipPath id="astroicon:booka"><path d="M0 0h14v16H0z" fill="#fff" transform="translate(.8)"></path></clipPath></defs></svg>資料ダウンロ<span class="pc">｜</span><span class="sp">ー</span>ド</a>
+		<a href="/info.php" class="rightmenu2"><svg astro-icon="user" role="img" viewBox="0 0 16 18" aria-hidden="true" fill="none" data-astro-cid-5pfho6lz="true"><g clip-path="url(#astroicon:usera)"><path d="M9.611 10.692a6.263 6.263 0 0 1 6.264 6.264c0 .576-.468 1.044-1.044 1.044H1.169a1.045 1.045 0 0 1-1.044-1.044 6.263 6.263 0 0 1 6.264-6.264h3.222ZM3.5 4.5C3.5 2.016 5.516 0 8 0s4.5 2.016 4.5 4.5S10.484 9 8 9a4.502 4.502 0 0 1-4.5-4.5Z" fill="#fff"></path></g><defs><clipPath id="astroicon:usera"><path d="M0 0h15.75v18H0z" fill="#fff" transform="translate(.125)"></path></clipPath></defs></svg>無料相談会に申し込む</a>
+		<a href="https://revelapp.jp/media/category/customerstory/" class="rightmenu3"><svg astro-icon="case" role="img" viewBox="0 0 20 18" aria-hidden="true" fill="none" data-astro-cid-5pfho6lz="true"><path d="M5 4V2C5 0.896 5.896 0 7 0h6c1.104 0 2 0.896 2 2v2h3c1.104 0 2 0.896 2 2v10c0 1.104-0.896 2-2 2H2c-1.104 0-2-0.896-2-2V6c0-1.104 0.896-2 2-2h3zm2 0h6V2H7v2zm11 2H2v10h16V6z" fill="#fff"></path></svg>導入事例</a>
 	</section>
 
     <!-------------------------- ▼ header // start -------------------------->
@@ -164,65 +160,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					.button_consul_wrap{display:flex;}
 					a.bc2_wrap{display:flex;align-items: center;justify-content: center;background:#fff;color:#fff !important;height:100%;margin:0 1rem;border-radius:4rem;font-size: 22px;/*border:2px solid #3465e5;*/border-bottom: solid 8px #3465e5;letter-spacing: 1px;font-weight: 600;font-family: "Murecho";padding:0 !important;background: linear-gradient(90deg, #1ba3eb, #85d81f);}
 					a.bc2_wrap svg{width:1.5rem;margin-right:.5rem;}
-					a.bc3_wrap{display:inline-flex !important;align-items: center;justify-content: center;background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;color:#fff !important;height:100%;margin:0 1rem;border-radius:4rem !important;font-size: 22px;border-bottom: solid 8px #764ba2;letter-spacing: 1px;font-weight: 600;font-family: "Murecho";padding:14px 35px !important;}
-					a.bc3_wrap svg{width:1.5rem;margin-right:.5rem;}
-					.button.consul3 .pc{display:inline;}
-					.button.consul3 .sp{display:none;}
 					@media screen and (max-width: 767px) {
-						.button_consul_wrap{flex-direction: column;gap: 10px;padding: 0 15px;}
-						.button_consul_wrap .button{width: 100%;margin: 0;}
-
-						/* 統一されたボタンスタイル */
-						.button.consul a,
-						a.bc2_wrap,
-						a.bc3_wrap {
-							display: flex !important;
-							align-items: center !important;
-							justify-content: center !important;
-							font-size: 16px !important;
-							padding: 18px 20px !important;
-							margin: 0 !important;
-							border-radius: 2rem !important;
-							width: 100% !important;
-							min-height: 56px !important;
-							line-height: 1.2 !important;
-							border-bottom-width: 4px !important;
-						}
-
-						/* 1つ目のボタン（資料ダウンロード）*/
-						.button.consul a {
-							background: linear-gradient(90deg, #f76002 0%, #ffb300 100%) !important;
-							color: #fff !important;
-							border-bottom: 4px solid #f76002 !important;
-							text-decoration: none;
-							flex-direction: column;
-						}
-						.button.consul .bottom {
-							display: flex;
-							align-items: center;
-							justify-content: center;
-							flex-direction: row;
-							padding: 0;
-						}
-						.button.consul .bottom .icon {margin-right: 0.5rem;}
-						.button.consul .bottom .icon img {width: 1.3rem;}
-						.button.consul .bottom .arrow {display: none;}
-						.button.consul .bottom .catch {font-size: 16px;line-height: 1.2;font-weight: 600;}
-
-						/* アイコン統一 */
-						a.bc2_wrap svg,
-						a.bc3_wrap svg {
-							width: 1.3rem !important;
-							margin-right: 0.5rem !important;
-							flex-shrink: 0;
-						}
-
-						/* テキスト表示切り替え */
-						.button.consul3 .pc{display:none;}
-						.button.consul3 .sp{display:inline;}
-						.button.consul3 svg.pc{display:none;}
-
-						.custom-case-button{width: 100% !important;margin-top: 0 !important;}
+						.button_consul_wrap{flex-direction: column;}
+						a.bc2_wrap{line-height:3;}
 					}
 				</style>
 				<div class="button_consul_wrap">
@@ -248,23 +188,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div><!-- end .button -->
 					<div class="button consul2">
 						<a href="/info.php" class="bc2_wrap">
-						<svg astro-icon="user" role="img" viewBox="0 0 16 18" aria-hidden="true" fill="none" data-astro-cid-5pfho6lz="true"><g clip-path="url(#astroicon:usera)"><path d="M9.611 10.692a6.263 6.263 0 0 1 6.264 6.264c0 .576-.468 1.044-1.044 1.044H1.169a1.045 1.045 0 0 1-1.044-1.044 6.263 6.263 0 0 1 6.264-6.264h3.222ZM3.5 4.5C3.5 2.016 5.516 0 8 0s4.5 2.016 4.5 4.5S10.484 9 8 9a4.502 4.502 0 0 1-4.5-4.5Z" fill="#fff"></path></g><defs><clipPath id="astroicon:usera"><path d="M0 0h15.75v18H0z" fill="#fff" transform="translate(.125)"></path></clipPath></defs></svg>無料体験<wbr>・<wbr>個別相談予約
+						<svg astro-icon="user" role="img" viewBox="0 0 16 18" aria-hidden="true" fill="none" data-astro-cid-5pfho6lz="true"><g clip-path="url(#astroicon:usera)"><path d="M9.611 10.692a6.263 6.263 0 0 1 6.264 6.264c0 .576-.468 1.044-1.044 1.044H1.169a1.045 1.045 0 0 1-1.044-1.044 6.263 6.263 0 0 1 6.264-6.264h3.222ZM3.5 4.5C3.5 2.016 5.516 0 8 0s4.5 2.016 4.5 4.5S10.484 9 8 9a4.502 4.502 0 0 1-4.5-4.5Z" fill="#fff"></path></g><defs><clipPath id="astroicon:usera"><path d="M0 0h15.75v18H0z" fill="#fff" transform="translate(.125)"></path></clipPath></defs></svg>無料相談会に申し込む
 						</a>
 					</div><!-- end .button -->
 				</div><!-- end .button -->
-				<div class="button consul3 custom-case-button" style="width: 100%; text-align: left; margin-top: 20px;">
-					<a href="https://revelapp.jp/media/category/customerstory/" target="_blank" class="bc3_wrap" style="display: inline-flex; align-items: center; padding: 14px 35px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; text-decoration: none; border-radius: 25px; font-weight: bold; font-size: 16px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(0,0,0,0.1)';">
-					<svg style="width: 20px; height: 20px; margin-right: 8px;" viewBox="0 0 20 18" fill="none">
-						<path d="M5 4V2C5 0.896 5.896 0 7 0h6c1.104 0 2 0.896 2 2v2h3c1.104 0 2 0.896 2 2v10c0 1.104-0.896 2-2 2H2c-1.104 0-2-0.896-2-2V6c0-1.104 0.896-2 2-2h3zm2 0h6V2H7v2zm11 2H2v10h16V6z" fill="#fff"/>
-					</svg>
-						<span class="pc">導入事例集はこちら</span>
-						<span class="sp">導入事例</span>
-					<svg class="pc" style="width: 16px; height: 16px; margin-left: 6px;" viewBox="0 0 24 24" fill="none">
-						<path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-					</svg>
-					</a>
-				</div>
-			</div><!-- end .button -->
 			</div><!-- end .header -->
         </div><!-- end .container -->
 	</header><!-- end .header03 --> 
@@ -304,6 +231,93 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-------------------------- ▲ header-to // end -------------------------->
 
 	
+	
+    <!-- <!-------------------------- ▼ introduction05 // start -------------------------->
+<!--
+▼ 説明会画像リンク付き挿入
+<div class="setsumeikai-image-wrapper">
+    <a href="https://forms.gle/uEWL3Dio94UFWL7ZA" target="_blank" rel="noopener noreferrer">
+        <img src="https://revelapp.jp/images/setsumeikai0418.jpg" alt="Revel App 説明会" class="setsumeikai-image" />
+    </a>
+</div>
+
+<style>
+.setsumeikai-image-wrapper {
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.setsumeikai-image {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    cursor: pointer;
+}
+</style>
+-->
+
+<div style="display: flex; justify-content: center; align-items: center;">
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/m_O8BZ9iQMw?si=8J8earNiwbhq396i"
+    title="YouTube video player"
+    style="border: none;"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+
+<!--
+    <section id="introduction" class="introduction05">
+        <div class="container">
+			<h2>
+				<div class="left">
+					<div class="logo"><img src="./images/logo02.svg" alt="revel-app"></div><!-- /.logo -->
+					<div class="caption">レベルアップ</div><!-- /.caption -->
+				</div><!-- /.left -->
+				<div class="plane">とは</div><!-- /.plane -->
+			</h2>
+			<div class="box-wrapper">
+				<div class="box">
+					<div class="visual"><img src="./images/introduction-visual01.png" alt="*"></div><!-- /.visual -->
+					<div class="text">
+						<div class="mark">
+							<div class="number"><p>1</p></div><!-- /.number -->
+							<div class="catch"><p>ブロックチェーンゲームを活用した工賃作業</p></div><!-- /.catch -->
+						</div><!-- /.mark -->
+					</div><!-- /.text -->
+				</div><!-- /.box -->
+				<div class="box">
+					<div class="visual"><img src="./images/introduction-visual02.png" alt="*"></div><!-- /.visual -->
+					<div class="text">
+						<div class="mark">
+							<div class="number"><p>2</p></div><!-- /.number -->
+							<div class="catch"><p>セルフモニタリングシステムで体調安定</p></div><!-- /.catch -->
+						</div><!-- /.mark -->
+					</div><!-- /.text -->
+				</div><!-- /.box -->
+				<div class="box">
+					<div class="visual"><img src="./images/introduction-visual03.png" alt="*"></div><!-- /.visual -->
+					<div class="text">
+						<div class="mark">
+							<div class="number"><p>3</p></div><!-- /.number -->
+							<div class="catch"><p>体調の見える化グラフが自動生成</p></div><!-- /.catch -->
+						</div><!-- /.mark -->
+					</div><!-- /.text -->
+				</div><!-- /.box -->
+			</div><!-- /.box-wrapper -->
+			<div class="explain">
+				<div class="sentence">
+						<p>RevelAppは、<span class="bold">セルフケアを楽しみながら<br class="sp-disblock">実践できる体調管理ツール</span>と、<br><span class="bold">ブロックチェーンゲームを用いた工賃作業</span>が<br class="sp-disblock">一体となった、全く新しい支援ツールです。</p>
+						<p>セルフケアがなかなか続かない方や、<br class="sp-disblock">通所意欲のコントロールが難しい方に向けて、<br><span class="bold">「お仕事として」</span>楽しさとやりがいを<br class="sp-disblock">バランスよく提供しながら、<br>今後のステップアップへのモチベーションを<br class="sp-disblock">高めるアプローチをご提供します。</p>
+					</div><!-- end .sentence -->
+			</div><!-- /.explain -->
+        </div><!-- end .container -->
+    </section><!-- end .introduction05 -->
+    <!-------------------------- ▼ introduction05 // end -------------------------->
+
 
     <!-------------------------- ▼ targeting // start -------------------------->
     <section id="targeting" class="targeting">
@@ -457,6 +471,68 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<?php include('./include/simple-cta.php'); ?>
     <!-------------------------- ▼ simple-cta // end -------------------------->
 
+
+
+    <!-------------------------- ▼ target-suit // start -------------------------->
+    <section class="target-suit">
+        <div class="container">
+			<div class="title">
+				<div class="border"></div><!-- end .border -->
+				<div class="en"><p>Suit For Various Facilities</p></div>
+				<h3>
+
+				<h2><div class="catch">様々な施設からの<br class="sp-disblock"><span class="grade">お問い合わせ</span>を<br>いただいております</div><!-- end .catch --></h2>
+			</div><!-- end .title -->
+			<ul class="place">
+				<li><img src="./images/check.svg" alt="*"><p>就労継続支援B型</p></li>
+				<li><img src="./images/check.svg" alt="*"><p>就労継続支援A型</p></li>
+				<li><img src="./images/check.svg" alt="*"><p>就労移行支援</p></li>
+				<li><img src="./images/check.svg" alt="*"><p>放課後等デイサービス</p></li>
+				<li><img src="./images/check.svg" alt="*"><p>自立・生活訓練</p></li>
+			</ul>
+        </div><!-- end .container -->
+    </section><!-- end .target-suit --> 
+    <!-------------------------- ▼ target-suit // end -------------------------->
+
+
+
+    <!-------------------------- ▼ game-list // start -------------------------->
+    <section id="game-list" class="game-list">
+		<div class="title">
+			<h3><div class="catch">Game List</div></h3>
+			<h2>
+				<div class="catch"><span class="grade">導入</span>ブロックチェーンゲーム一覧</div>
+			</h2><!-- end -->
+		</div><!-- end .title -->
+		<div class="container">
+			<div class="content-basic">
+				<div class="splide" aria-label="">
+					<div class="splide-wrapper">
+						<div class="splide__track">
+							<ul class="splide__list">
+								<li class="splide__slide"><div class="game"><img src="./images/game-list-thumb01.jpg" alt="*"></div><!-- end .thumb --></li>
+								<li class="splide__slide"><div class="game"><img src="./images/game-list-thumb02.jpg" alt="*"></div><!-- end .thumb --></li>
+								<li class="splide__slide"><div class="game"><img src="./images/game-list-thumb03.png" alt="*"></div><!-- end .thumb --></li>
+								<li class="splide__slide"><div class="game"><img src="./images/game-list-thumb04.jpg" alt="*"></div><!-- end .thumb --></li>
+								<li class="splide__slide"><div class="game"><img src="./images/game-list-thumb05.jpg" alt="*"></div><!-- end .thumb --></li>
+								<li class="splide__slide"><div class="game"><img src="./images/game-list-thumb06.jpg" alt="*"></div><!-- end .thumb --></li>
+								<li class="splide__slide"><div class="game"><img src="./images/game-list-thumb07.jpg" alt="*"></div><!-- end .thumb --></li>
+								<li class="splide__slide"><div class="game"><img src="./images/game-list-thumb08.png" alt="*"></div><!-- end .thumb --></li>
+							</ul>
+						</div><!-- end .splide-track -->
+						<div class="splide__progress">
+							<div class="splide__progress__bar"></div><!-- end .splide__progress__bar -->
+						</div><!-- end .splide__progress__bar -->
+						<div class="splide__arrows"></div><!-- end .splide__arrows -->
+					</div><!-- end .splide-wrapper -->
+				</div><!-- end .splide -->
+			</div><!-- end .content-basic -->
+			<div class="explain">
+				<div class="caption"><p>提携ゲームタイトルはどんどん増えていきます！</p></div><!-- /.caption -->
+			</div><!-- /.explain -->
+        </div><!-- end .container -->
+    </section><!-- end .game-list --> 
+    <!-------------------------- ▼ game-list // end -------------------------->
 
 
     <!-------------------------- ▼ point // start -------------------------->
@@ -638,54 +714,105 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="splide__arrows"></div><!-- end .splide__arrows -->
 			</div><!-- end .splide-wrapper -->
 		</div><!-- end .splide -->
-    </section><!-- end .recommend -->
+    </section><!-- end .recommend --> 
     <!-------------------------- ▼ recommend // end -------------------------->
 
-    <!-------------------------- ▼ target-suit // start -------------------------->
-    <section class="target-suit">
-        <div class="container">
-			<div class="title">
-				<div class="border"></div><!-- end .border -->
-				<div class="en"><p>Suit For Various Facilities</p></div>
-				<h3>
-
-				<h2><div class="catch">様々な施設からの<br class="sp-disblock"><span class="grade">お問い合わせ</span>を<br>いただいております</div><!-- end .catch --></h2>
-			</div><!-- end .title -->
-			<ul class="place">
-				<li><img src="./images/check.svg" alt="*"><p>就労継続支援B型</p></li>
-				<li><img src="./images/check.svg" alt="*"><p>就労継続支援A型</p></li>
-				<li><img src="./images/check.svg" alt="*"><p>就労移行支援</p></li>
-				<li><img src="./images/check.svg" alt="*"><p>放課後等デイサービス</p></li>
-				<li><img src="./images/check.svg" alt="*"><p>自立・生活訓練</p></li>
-			</ul>
-        </div><!-- end .container -->
-    </section><!-- end .target-suit --> 
-    <!-------------------------- ▼ target-suit // end -------------------------->
-
-
-
-    <!-------------------------- ▼ game-list // start -------------------------->
-    <section id="game-list" class="game-list">
-		<div class="title">
-			<h3><div class="catch">Game List</div></h3>
-			<h2>
-				<div class="catch"><span class="grade">導入</span>ブロックチェーンゲーム一覧</div>
-			</h2><!-- end -->
-		</div><!-- end .title -->
+	<!-- <!-------------------------- ▼ support // start -------------------------->
+	<section class="support">
 		<div class="container">
+			<div class="left">
+				<div class="title">
+					<h2><div class="catch">最新技術についているか不安…<br><span class="grade">ご安心ください</span></div><!-- end .catch --></h2>
+
+					<h3>
+						<div class="line">
+							<div class="catch">
+								業界初の全く新しいサービスだからこそ、<br>あなたの施設専属の担当者が、<br>導入のご相談～導入後の活用まで<br>徹底サポートいたします！
+							</div><!-- /.catch -->
+						</div><!-- /.line -->
+					</h3>
+				</div><!-- end .title -->
+				<ul>
+					<li><img src="./images/check.svg" alt="*"><p>ニーズに合った最適なゲーム選定をお手伝い</p></li>
+					<li><img src="./images/check.svg" alt="*"><p>利用者様と支援者様、それぞれのマニュアルを完備</p></li>
+					<li><img src="./images/check.svg" alt="*"><p>全スタッフ様向けの活用研修会を実施</p></li>
+					<li><img src="./images/check.svg" alt="*"><p>他施設様での活用事例、成功事例をご紹介</p></li>
+					<li><img src="./images/check.svg" alt="*"><p>連携機関や親御さんへのRevelAppご説明資料をお渡し</p></li>
+					<li><img src="./images/check.svg" alt="*"><p>ゲーム変更や対象利用者様変更のご相談も受け付け</p></li>
+				</ul>
+				<div class="sentence">
+					<p>Web3やブロックチェーンゲームの知識がゼロでも、<br>最短2週間で簡単に導入頂けます！</p>
+				</div><!-- /.sentence -->
+			</div><!-- /.left -->
+			<div class="right">
+				<div class="back"><p>Strong<br>Support<br>System</p></div><!-- /.en -->
+				<div class="thumb">
+					<img src="./images/support-right-thumb.jpg" alt="*">
+				</div><!-- /.thumb -->
+			</div><!-- /.right -->
+        </div><!-- end .container -->
+	</section><!-- /.support -->
+	<!-------------------------- ▲ support // end -------------------------->
+
+
+    <!-- <!-------------------------- ▼ future // start -------------------------->
+    <section id="future" class="future">
+		<div class="global title">
+			<div class="triangle left-top"></div><!-- end .triangle -->
+			<div class="triangle right-top"></div><!-- end .triangle -->
+			<div class="text">
+				<div class="en"><p>Future Developments</p></div><!--  end .en -->
+				<h3 class="type01"><div class="catch">よりよいアップデートで<br class="sp-disblock">さらに使いやすく！</div><!-- end .catch --></h3>
+				<h2 class="type01"><div class="catch">今後<span class="small">の</span>展開</div><!-- end .catch --></h2>
+			</div><!-- end .text -->
+		</div><!-- end .title -->
+        <div class="container">
+			<div class="box-wrapper">
+				<div class="box">
+					<div class="number"><p>01</p></div><!-- end .number -->
+					<div class="thumb"><img src="./images/future-box-thumb01.jpg" alt=""></div><!-- end .thumb -->
+					<h3>
+						<div class="catch">
+							RevelAppをきっかけとして、<br><span class="color">ゲーム企業</span>から<br><span class="color">更に高単価の工賃作業</span>のご依頼</div><!-- end .catch -->
+					</h3>
+					<div class="sentence"><p>ゲーム企業各社様は多量のWeb業務を抱えており､ その業務の一部をRevelApp加盟施設に優先的に割り振って頂くことに成功！ </p><p>通所を頑張っていると､ 思わぬお仕事が頂けるかも！？</p></div><!-- end .sentence -->
+
+					
+
+				</div><!-- end .box -->
+				<div class="box">
+					<div class="number"><p>02</p></div><!-- end .number -->
+					<div class="thumb"><img src="./images/future-box-thumb02.jpg" alt=""></div><!-- end .thumb -->
+					<h3>
+						<div class="catch"><span class="color">ゲーム企業</span>・<br>ブロックチェーン業界への<span class="color">就労</span></div><!-- end .catch -->
+					</h3>
+					<div class="sentence"><p>セルフモニタリングの記入によって､｢どのくらいの期間ゲームをプレイしてくれているか｣や､｢お休みなく安定して通所ができているか｣などの【RevelApp作業実績データ】が蓄積｡ </p>
+					<p>それを見たゲーム企業から｢この人を是非採用したい！｣とオファーが来て､ 憧れのゲーム会社に就職できるルートを構築中！</p></div><!-- end .sentence -->
+
+					
+
+				</div><!-- end .box -->
+				<div class="box">
+					<div class="number"><p>03</p></div><!-- end .number -->
+					<div class="thumb"><img src="./images/future-box-thumb03.jpg" alt=""></div><!-- end .thumb -->
+					<h3>
+						<div class="catch">
+							先端IT情報の<span class="color">"福祉活用"</span>を<br>学べる<span class="color">コミュニティ</span>		
+						</div><!-- end .catch-->
+					</h3>
+					<div class="sentence"><p>私たちが知りたいのは「それってどうやって福祉支援で使うの？」の視点。Web3/AIなどのテクノロジー業界と障害福祉のそれぞれの視点を融合させた実用的な学びを提供する場所「RevelApp DAO(仮称)」を誠意構築中です。</p></div>
+				</div><!-- end .box -->
+			</div><!-- end .box-wrapper -->
 			<div class="content-basic">
 				<div class="splide" aria-label="">
 					<div class="splide-wrapper">
 						<div class="splide__track">
 							<ul class="splide__list">
-								<li class="splide__slide"><div class="game"><img src="./images/game-list-thumb01.jpg" alt="*"></div><!-- end .thumb --></li>
-								<li class="splide__slide"><div class="game"><img src="./images/game-list-thumb02.jpg" alt="*"></div><!-- end .thumb --></li>
-								<li class="splide__slide"><div class="game"><img src="./images/game-list-thumb03.png" alt="*"></div><!-- end .thumb --></li>
-								<li class="splide__slide"><div class="game"><img src="./images/game-list-thumb04.jpg" alt="*"></div><!-- end .thumb --></li>
-								<li class="splide__slide"><div class="game"><img src="./images/game-list-thumb05.jpg" alt="*"></div><!-- end .thumb --></li>
-								<li class="splide__slide"><div class="game"><img src="./images/game-list-thumb06.jpg" alt="*"></div><!-- end .thumb --></li>
-								<li class="splide__slide"><div class="game"><img src="./images/game-list-thumb07.jpg" alt="*"></div><!-- end .thumb --></li>
-								<li class="splide__slide"><div class="game"><img src="./images/game-list-thumb08.png" alt="*"></div><!-- end .thumb --></li>
+								<li class="splide__slide"><img src="./images/future-play-screen01.jpg" alt="*"></li>
+								<li class="splide__slide"><img src="./images/future-play-screen02.jpg" alt="*"></li>
+								<li class="splide__slide"><img src="./images/future-play-screen04.jpg" alt="*"></li>
+								<li class="splide__slide"><img src="./images/future-play-screen05.jpg" alt="*"></li>
+								<li class="splide__slide"><img src="./images/future-play-screen06.jpg" alt="*"></li>
 							</ul>
 						</div><!-- end .splide-track -->
 						<div class="splide__progress">
@@ -695,14 +822,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div><!-- end .splide-wrapper -->
 				</div><!-- end .splide -->
 			</div><!-- end .content-basic -->
-			<div class="explain">
-				<div class="caption"><p>提携ゲームタイトルはどんどん増えていきます！</p></div><!-- /.caption -->
-			</div><!-- /.explain -->
         </div><!-- end .container -->
-    </section><!-- end .game-list -->
-    <!-------------------------- ▼ game-list // end -------------------------->
-
-
+    </section><!-- end .future -->
+    <!-------------------------- ▲ future // end -------------------------->
 
     <!-------------------------- ▼ faq // start -------------------------->
     <section id="faq" class="faq">
@@ -851,6 +973,54 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-------------------------- ▲ faq // end -------------------------->
 
 
+	<!-- <!-------------------------- ▼ thought // start -------------------------->
+	<section id="thought" class="thought">
+		<div class="wrapper">
+			<div class="back">
+				thought US
+			</div><!-- end .back -->
+			<div class="inner">
+				<div class="thumb">
+					<div class="image">
+						<img src="./images/thought-thumb01.jpg" alt="*">
+					</div><!-- end .image -->
+					<div class="image">
+						<img src="./images/thought-thumb02.jpg" alt="*">
+					</div><!-- end .image -->
+					<div class="image">
+						<img src="./images/thought-thumb03.jpg" alt="*">
+					</div><!-- end .image -->
+					<div class="image">
+						<img src="./images/thought-thumb04.jpg" alt="*">
+					</div><!-- end .image -->
+				</div>
+				<div class="text">
+					<h3>
+						<div class="border"></div><!-- end .border -->
+						<div class="cover">
+							サービスへの想い
+						</div><!-- end .cover -->
+					</h3>
+					<h2>
+						<div class="cover">
+						就労支援施設へ<br>本質的で持続性のある<br>サービスの提供を
+						</div><!-- end .cover -->
+					</h2>
+				</div><!-- end .text -->
+			</div><!-- end .inner -->
+			<div class="explain">
+				<div class="sentence">
+					<p>自身でB型事業所を運営し、その中での工賃作業の1部分として2021年より「ブロックチェーンゲーム」を採用してまいりました。 大きな成果もあった反面、様々な弊害を産んだり、支援上の失敗を繰り返していく中で、「どうすれば持続性があって、本質的な支援につながるツールとしてブロックチェーンゲームを活用できるだろう？」と常に考え、様々なご縁もあって、本サービスの形に辿り着きました。 ブロックチェーンゲームを含むWeb3の業界はまだまだ未完成で、変化の早い領域なので、サービスの形も時流に合わせてスピーディに変化させていくことが求められます。 ユーザーの皆様と一緒に、これからの時代の新しい作業の在り方を創っていければ幸いです。
+					</p>
+					<p class="profile">
+						<span class="en">Founder</span> 近藤貴司
+					</p>
+				</div><!-- end .sentence -->
+			</div><!-- end .inner -->
+		</div><!-- end .wrapper -->
+	</section><!-- end .thought -->
+	<!-------------------------- ▲ thought // end -------------------------->
+
 	<!-------------------------- ▼ mailform // start -------------------------->
 	<section id="form-wrapper" class="mailform">
 		<div class="wrapper">
@@ -858,20 +1028,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<form action="php/mailform.php" method="post" id="mail_form">
 					<div class="title">
 
-						<h2>資料請求のお申し込み</h2>
-						<div style="margin: 30px auto; text-align: center; max-width: 400px;">
-							<a href="/info.php" style="display: block; padding: 20px 30px; background: linear-gradient(135deg, #1ba3eb, #85d81f); color: #fff; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 18px; box-shadow: 0 4px 15px rgba(27, 163, 235, 0.3); transition: all 0.3s ease;">
-								<svg astro-icon="user" role="img" viewBox="0 0 16 18" aria-hidden="true" fill="none" style="width: 24px; height: 24px; display: inline-block; vertical-align: middle; margin-right: 10px;"><g clip-path="url(#astroicon:userform)"><path d="M9.611 10.692a6.263 6.263 0 0 1 6.264 6.264c0 .576-.468 1.044-1.044 1.044H1.169a1.045 1.045 0 0 1-1.044-1.044 6.263 6.263 0 0 1 6.264-6.264h3.222ZM3.5 4.5C3.5 2.016 5.516 0 8 0s4.5 2.016 4.5 4.5S10.484 9 8 9a4.502 4.502 0 0 1-4.5-4.5Z" fill="#fff"></path></g><defs><clipPath id="astroicon:userform"><path d="M0 0h15.75v18H0z" fill="#fff" transform="translate(.125)"></path></clipPath></defs></svg>無料体験・個別相談はこちら
-							</a>
-							<style>
-								#form-wrapper .title a:hover {
-									transform: translateY(-2px);
-									box-shadow: 0 6px 20px rgba(27, 163, 235, 0.4) !important;
-								}
-							</style>
-						</div>
-
+						<h2>資料請求/無料体験のお申し込み</h2>
+			
 					</div><!-- end .title -->
+					<dl>
+						<dt><i></i>会社名</dt>
+						<dd><input type="text" name="company" value="" /></dd>
+					</dl>
+					<dl>
+						<dt><i></i>お名前</dt>
+						<dd><input type="text" name="name_1" value="" /></dd>
+					</dl>
 					<!--
 					<dl>
 						<dt><i></i>お名前</dt>
@@ -916,6 +1083,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						</dd>
 					</dl>
 					<dl>
+						<dt><i></i>施設ホームページ</dt>
+						<dd><input type="text" name="website" value="" /></dd>
+					</dl>
+					<dl>
 						<dt><i></i>お問い合わせの種類</dt>
 						<dd class="required">
 							<ul>
@@ -925,18 +1096,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<li><label><input type="checkbox" name="kind[]" value="その他" />その他</label></li>
 							</ul>
 						</dd>
-					</dl>
-					<dl>
-						<dt><i></i>会社名</dt>
-						<dd><input type="text" name="company" value="" /></dd>
-					</dl>
-					<dl>
-						<dt><i></i>お名前</dt>
-						<dd><input type="text" name="name_1" value="" /></dd>
-					</dl>
-					<dl>
-						<dt><i></i>施設ホームページ</dt>
-						<dd><input type="text" name="website" value="" /></dd>
 					</dl>
 					<dl>
 						<dt><i></i>お問い合わせ内容</dt>

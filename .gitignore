@@ -1,4 +1,7 @@
 customer-portal.revelapp.jp/
 media/
+_images/
+psd/
+.claude/
 .DS_Store
 *.log
